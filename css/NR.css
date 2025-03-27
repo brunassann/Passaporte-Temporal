@@ -52,6 +52,21 @@ main {
   background-size: cover;
   background-repeat: no-repeat;
 }
+/* --------------------barrinha de rolagem----------------------*/
+::-webkit-scrollbar {
+  width: 15px;
+}
+
+::-webkit-scrollbar-track {
+  background: #ddefff;
+  border-radius: 13px;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color:#052D5C;
+  border-radius: 10px;
+  border: 1px solid #ddefff;
+}
 
 /* --------------------header----------------------*/
 
