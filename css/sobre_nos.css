@@ -255,6 +255,7 @@ ul li ul ul {
 #texto{
     width: 50%;
     height: 65%;
+    margin: auto;
     font-family: 'Exo-semibold';
     color: #ffffff;
     font-size: 27px;
