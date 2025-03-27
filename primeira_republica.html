@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Primeira República</title>
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,800" rel="stylesheet">
+    <!-- SWIPER 4.5.0 (igual ao CodePen) -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.5.0/css/swiper.min.css">
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+      integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="icon" href="imagem/elemento1.png" />
+    <script src="periodos.js"></script>
+    <link rel="stylesheet" href="css/PR.css" type="text/css"/>
+  </head>
+  <body>
+    <main>
+      <nav class="barra_menu">
+        <div id="menu">
+          <div id="logo"></div>
+          <div id="nome_logo">PASSAPORTE TEMPORAL</div>
+        </div>
+  
+        <div id="navegacao">
+          <ul>
+            <li><a href="index.html">Início</a></li>
+            <li><a href="sobre_nos.html">Sobre nós</a></li>
+            <li>
+              <a href="#">Períodos &#x25BE;</a>
+              <ul class="dropdown1">
+                <li><a href="#">Colonial</a></li>
+                <li>
+                  <a href="#">Imperial &#x25BE;</a>
+                  <ul class="dropdown2">
+                    <li><a href="primeiro_reinado.html">Primeiro Reinado</a></li>
+                    <li><a href="periodo_regencial.html">Período Regencial</a></li>
+                    <li><a href="segundo_reinado.html">Segundo Reinado</a></li>
+                  </ul>
+                </li>
+                <li>
+                  <a href="#">Republicano &#x25BE;</a>
+                  <ul class="dropdown3">
+                    <li><a href="primeira_republica.html">Primeira República</a></li>
+                    <li><a href="era_vargas.html">Era Vargas</a></li>
+                    <li><a href="republica_populista.html">República Populista</a></li>
+                    <li><a href="ditadura.html">Ditadura Militar</a></li>
+                    <li><a href="nova_republica.html">Nova República</a></li>
+                  </ul>
+                </li>
+              </ul>
+            </li>
+            <li><a href="brasil_do_amanha.html">Brasil do amanhã</a></li>
+          </ul>
+        </div>
+      </nav>
+  
+      <section id="bemVindo">
+        <div id="fundo-imagem"></div>
+        <img src="imagem/primeira_rep.png" alt="capacete"/>
+        <p>Bem-vindo a:</p>
+        <h1>Primeira República</h1>
+        <h2>(1889-1930)</h2>
+      </section>
+  
+      <div class="container">
+        <div class="timeline">
+          <div class="swiper-container">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide" style="background-image: url(imagem/pr4.jpeg)" alt="comeco_da_republica" data-year="1889">
+                <div class="swiper-slide-content">
+                  <span class="timeline-year">1889</span>
+                  <h5 class="timeline-title">República Velha</h5>
+                  <p class="timeline-text">Proclamação da República (15 de novembro). O marechal Deodoro da Fonseca lidera um golpe militar e derruba Dom Pedro II. </p>
+                </div>
+              </div>
+              <div class="swiper-slide" style="background-image: url(imagem/pr2.jpeg)"  alt="era_vargas" data-year="1891">
+                <div class="swiper-slide-content">
+                  <span class="timeline-year">1891</span>
+                  <h5 class="timeline-title">Constituição</h5>
+                  <p class="timeline-text">Inspirada no modelo dos EUA, estabelece o presidencialismo e o federalismo, mas mantém o poder concentrado nas elites.</p>
+                </div>
+              </div>
+              <div class="swiper-slide" style="background-image: url(imagem/pr.jpeg)" alt="rep_populista" data-year="1896-1897">
+                <div class="swiper-slide-content">
+                  <span class="timeline-year">1896-1897</span>
+                  <h5 class="timeline-title">Guerra de Canudos</h5>
+                  <p class="timeline-text">Movimento liderado por Antônio Conselheiro no sertão da Bahia é brutalmente reprimido pelo Exército, resultando em milhares de mortes.</p>
+                </div>
+              </div>
+              <div class="swiper-slide" style="background-image: url(imagem/pr5.jpeg)" alt="ditadura_militar" data-year="1904">
+                <div class="swiper-slide-content">
+                  <span class="timeline-year">1904</span>
+                  <h5 class="timeline-title">Revolta da Vacina:</h5>
+                  <p class="timeline-text">  População do Rio de Janeiro se revolta contra a vacinação obrigatória e as reformas urbanas de Pereira Passos, gerando confrontos com o governo.</p>
+                </div>
+              </div>
+              <div class="swiper-slide" style="background-image: url(imagem/pr3.jpeg)" alt="nova_rep" data-year="1930">
+                <div class="swiper-slide-content">
+                  <span class="timeline-year">1930</span>
+                  <h5 class="timeline-title">Revolução de 1930:</h5>
+                  <p class="timeline-text">Getúlio Vargas lidera um movimento armado e assume o poder, encerrando a República Velha e iniciando a Era Vargas.</p>
+                </div>
+              </div>
+              
+            </div>
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-button-next"></div>
+            <div class="swiper-pagination"></div>
+          </div>
+        </div>
+      </div>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.5.0/js/swiper.min.js"></script>
+      <script>
+        var timelineSwiper = new Swiper('.timeline .swiper-container', {
+          direction: 'vertical',
+          loop: false,
+          speed: 1600,
+          pagination: {
+            el: '.swiper-pagination',
+            clickable: true,
+            renderBullet: function (index, className) {
+              var year = document.querySelectorAll('.swiper-slide')[index].getAttribute('data-year');
+              return '<span class="' + className + '">' + year + '</span>';
+            },
+          },
+          navigation: {
+            nextEl: '.swiper-button-next',
+            prevEl: '.swiper-button-prev',
+          },
+          breakpoints: {
+            768: {
+              direction: 'horizontal',
+            }
+          }
+        });
+      </script>
+      
+        <div class="footer-container">
+          <div class="footer-logo">
+            <img id="img_footer" src="imagem/logofooter.png" />
+          </div>
+          <div class="footer-link">
+            <div class="itens-footer">
+              <h3>Início</h3>
+              <a href="#">Home</a>
+            </div>
+            <div class="itens-footer">
+              <h3>Sobre Nós</h3>
+              <a href="#">Nossa missão</a>
+              <a href="#">Institucional</a>
+              <a href="#">Contatos</a>
+            </div>
+            <div class="itens-footer">
+              <h3>Suporte</h3>
+              <a href="#">FAQ</a>
+              <a href="#">Chat</a>
+            </div>
+          </div>
+          <div class="footer-social">
+            <a href="#"
+              ><img src="imagem/facebook1.png" alt="" width="70px"
+            /></a>
+            <a href="#"
+              ><img src="imagem/instagram1.png" alt="" width="70px"
+            /></a>
+            <a href="#"
+              ><img src="imagem/twitter1.png" alt="" width="70px"
+            /></a>
+          </div>
+        </div>
+        <div class="direitos">
+          <p>© 2025 Todos os direitos reservados</p>
+        </div>
+      </footer>
+    </main>
+  </body>
+</html>

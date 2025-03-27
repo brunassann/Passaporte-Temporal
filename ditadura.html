@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Ditadura Militar</title>
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,800" rel="stylesheet">
+    <!-- SWIPER 4.5.0 (igual ao CodePen) -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.5.0/css/swiper.min.css">
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+      integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <script src="periodos.js"></script>
+    <link rel="icon" href="imagem/elemento1.png" />
+    <link rel="stylesheet" href="css/DT.css" type="text/css"/>
+  </head>
+  <body>
+    <main>
+      <nav class="barra_menu">
+        <div id="menu">
+          <div id="logo"></div>
+          <div id="nome_logo">PASSAPORTE TEMPORAL</div>
+        </div>
+  
+        <div id="navegacao">
+          <ul>
+            <li><a href="index.html">Início</a></li>
+            <li><a href="sobre_nos.html">Sobre nós</a></li>
+            <li>
+              <a href="#">Períodos &#x25BE;</a>
+              <ul class="dropdown1">
+                <li><a href="#">Colonial</a></li>
+                <li>
+                  <a href="#">Imperial &#x25BE;</a>
+                  <ul class="dropdown2">
+                    <li><a href="primeiro_reinado.html">Primeiro Reinado</a></li>
+                    <li><a href="periodo_regencial.html">Período Regencial</a></li>
+                    <li><a href="segundo_reinado.html">Segundo Reinado</a></li>
+                  </ul>
+                </li>
+                <li>
+                  <a href="#">Republicano &#x25BE;</a>
+                  <ul class="dropdown3">
+                    <li><a href="primeira_republica.html">Primeira República</a></li>
+                    <li><a href="era_vargas.html">Era Vargas</a></li>
+                    <li><a href="republica_populista.html">República Populista</a></li>
+                    <li><a href="ditadura.html">Ditadura Militar</a></li>
+                    <li><a href="nova_republica.html">Nova República</a></li>
+                  </ul>
+                </li>
+              </ul>
+            </li>
+            <li><a href="brasil_do_amanha.html">Brasil do amanhã</a></li>
+          </ul>
+        </div>
+      </nav>
+  
+      <section id="bemVindo">
+        <div id="fundo-imagem"></div>
+        <img src="imagem/ditadura.png" alt="capacete"/>
+        <p>Bem-vindo a:</p>
+        <h1>Ditadura Militar</h1>
+        <h2>(1964-1985)</h2>
+      </section>
+  
+      <div class="container">
+        <div class="timeline">
+          <div class="swiper-container">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide" style="background-image: url(imagem/dit.jpeg)" alt="comeco_da_republica" data-year="1964">
+                <div class="swiper-slide-content">
+                  <span class="timeline-year">1964</span>
+                  <h5 class="timeline-title">Golpe Militar instaura a ditadura:</h5>
+                  <p class="timeline-text">João Goulart é deposto e os militares assumem o controle do país, impondo censura e repressão. </p>
+                </div>
+              </div>
+
+              <div class="swiper-slide" style="background-image: url(imagem/ditadura2.jpg)"  alt="era_vargas" data-year="1968">
+                <div class="swiper-slide-content">
+                  <span class="timeline-year">1968</span>
+                  <h5 class="timeline-title">AI-5 intensifica a repressão:</h5>
+                  <p class="timeline-text">O Ato Institucional nº 5 dá poderes absolutos ao governo, permitindo prisões arbitrárias e fechando o Congresso.</p>
+                </div>
+              </div>
+              <div class="swiper-slide" style="background-image: url(imagem/ditadura3.jpeg)" alt="rep_populista" data-year="1974">
+                <div class="swiper-slide-content">
+                  <span class="timeline-year">1974</span>
+                  <h5 class="timeline-title">Início da abertura política:</h5>
+                  <p class="timeline-text">O governo Geisel começa um processo gradual de transição para a democracia.</p>
+                </div>
+              </div>
+              <div class="swiper-slide" style="background-image: url(imagem/ditadura4.jpeg)" alt="ditadura_militar" data-year="1979">
+                <div class="swiper-slide-content">
+                  <span class="timeline-year">1979</span>
+                  <h5 class="timeline-title">Lei da Anistia:</h5>
+                  <p class="timeline-text"> Exilados políticos podem retornar ao Brasil, mas militares responsáveis por torturas também são perdoados.</p>
+                </div>
+              </div>
+              <div class="swiper-slide" style="background-image: url(imagem/ditadura5.jpeg)" alt="nova_rep" data-year="1985">
+                <div class="swiper-slide-content">
+                  <span class="timeline-year">1985</span>
+                  <h5 class="timeline-title">Tancredo Neves é eleito, mas morre antes da posse:</h5>
+                  <p class="timeline-text">Eleito pelo Colégio Eleitoral, Tancredo falece antes de assumir, e José Sarney se torna presidente.</p>
+                </div>
+              </div>
+              
+            </div>
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-button-next"></div>
+            <div class="swiper-pagination"></div>
+          </div>
+        </div>
+      </div>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.5.0/js/swiper.min.js"></script>
+      <script>
+        var timelineSwiper = new Swiper('.timeline .swiper-container', {
+          direction: 'vertical',
+          loop: false,
+          speed: 1600,
+          pagination: {
+            el: '.swiper-pagination',
+            clickable: true,
+            renderBullet: function (index, className) {
+              var year = document.querySelectorAll('.swiper-slide')[index].getAttribute('data-year');
+              return '<span class="' + className + '">' + year + '</span>';
+            },
+          },
+          navigation: {
+            nextEl: '.swiper-button-next',
+            prevEl: '.swiper-button-prev',
+          },
+          breakpoints: {
+            768: {
+              direction: 'horizontal',
+            }
+          }
+        });
+      </script>
+      
+        <div class="footer-container">
+          <div class="footer-logo">
+            <img id="img_footer" src="imagem/logofooter.png" />
+          </div>
+          <div class="footer-link">
+            <div class="itens-footer">
+              <h3>Início</h3>
+              <a href="#">Home</a>
+            </div>
+            <div class="itens-footer">
+              <h3>Sobre Nós</h3>
+              <a href="#">Nossa missão</a>
+              <a href="#">Institucional</a>
+              <a href="#">Contatos</a>
+            </div>
+            <div class="itens-footer">
+              <h3>Suporte</h3>
+              <a href="#">FAQ</a>
+              <a href="#">Chat</a>
+            </div>
+          </div>
+          <div class="footer-social">
+            <a href="#"
+              ><img src="imagem/facebook1.png" alt="" width="70px"
+            /></a>
+            <a href="#"
+              ><img src="imagem/instagram1.png" alt="" width="70px"
+            /></a>
+            <a href="#"
+              ><img src="imagem/twitter1.png" alt="" width="70px"
+            /></a>
+          </div>
+        </div>
+        <div class="direitos">
+          <p>© 2025 Todos os direitos reservados</p>
+        </div>
+      </footer>
+    </main>
+  </body>
+</html>
