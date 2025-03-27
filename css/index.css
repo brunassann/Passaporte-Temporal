@@ -1,0 +1,787 @@
+/* ----------------------------fontes---------------------------*/
+
+@font-face {
+    font-family: 'Azonix';
+    src: url('../font/Azonix.otf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Exo-bold';
+    src: url('../font/Exo2-Bold.otf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Exo-medium';
+    src: url('../font/Exo2-Medium.otf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Anta';
+    src: url('../font/Anta-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Exo-semibold';
+    src: url('../font/Exo2-SemiBold.otf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Island';
+    src: url('../font/IslandMoments-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Special';
+    src: url('../font/SpecialElite-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+/* --------------------para pegar toda a tela----------------------*/
+*{
+    padding: 0;
+    margin: 0;
+    }
+    
+    main{ 
+    position: relative;
+    margin: auto;
+    width: 100%;
+    height: 2270px;
+    background-image: url(../imagem/fundo2.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    z-index: 1;
+}
+
+main::after {
+    content: '';
+    background-color:#052D5C;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    left: 0;
+    top: 0;
+    opacity: .9;
+    z-index: -1;
+}
+
+/* --------------------barrinha de rolagem----------------------*/
+::-webkit-scrollbar {
+    width: 15px;
+}
+
+::-webkit-scrollbar-track {
+    background: #ddefff;
+    border-radius: 13px;
+}
+  
+::-webkit-scrollbar-thumb {
+    background-color:#052D5C;
+    border-radius: 10px;
+    border: 1px solid #ddefff;
+}
+
+/* --------------------header----------------------*/
+.barra_menu{
+    position: relative;
+    width: 100%;
+    height: 140px;
+    display: flex;
+    flex-direction: row;
+}
+
+#menu{
+    width: 30%;
+    height: 120px;
+    padding-top: 15px;
+    padding-left: 5px;
+    display: flex;
+    flex-direction: row;
+    margin-left: 25px;
+}
+
+#logo{
+    position: relative;
+    width: 120px;
+    height: 120px;
+    background-image: url('../imagem/logo_header.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+#nome_logo{
+    position: relative;
+    width: 250px;
+    height: 90px;
+    font-family: 'Azonix';
+    color: #F7C745;
+    font-size: 35px;
+    padding-top: 25px;
+    margin-left: 15px;
+}
+
+#navegacao{
+    width: 60%;
+    height: 50px;
+    padding-top: 15px;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    margin: auto;
+}
+/* --------------------navegação----------------------*/
+
+.barra_menu a {
+    position: relative;
+    width: 163px;
+    height: 35px;
+    text-align: center;
+    text-decoration: none;
+    font-size: 18px;
+    padding-top: 20px;
+    display: inline-block;
+    color:#F7C745;
+    transition: 0.3s ease-in-out;
+    font-family: 'Exo-bold';
+    margin-bottom: 10px;
+    margin-right: 35px;
+    display: inline-block;
+}
+
+.barra_menu a::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 0;
+    height: 5px;
+    background-color: #F7C745;
+    transition: width 0.3s ease-in-out;
+}
+
+.barra_menu a:hover::after {
+    width: 100%;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+ul li {
+    display: inline-block;
+    position: relative;
+}
+
+ul li a {
+    display: block;
+    text-decoration: none;
+    transition: 0.3s ease-in-out;
+    color: #F7C745;
+    position: relative;
+}
+
+ul li a::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 0;
+    height: 5px;
+    background-color: #F7C745;
+    transition: width 0.3s ease-in-out;
+}
+
+ul li a:hover::after {
+    width: 100%;
+}
+
+ul li ul {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 200px;
+    padding: 10px 5px;
+    display: none;
+    z-index: 999;
+    text-align: left;
+    background-color: #052D5C;
+    box-shadow: 5px 5px 10px rgba(179, 176, 0, 0.25);
+
+}
+
+ul li ul li {
+    display: block;
+    width: 100%;
+}
+
+ul li ul li a {
+    padding: 10px 15px;
+    font-size: 17px;
+    text-align: left;
+    display: block;
+}
+
+ul li:hover > ul {
+    display: block;
+}
+
+ul li ul ul {
+    left: 105%;
+    top: -65px;
+    position: absolute;
+}
+
+
+/* -----------------------------------logo e solgan --------------------------------*/
+#banner_entrada{
+    width: 100%;
+    height: 500px;
+    position: relative;
+    margin-top: 150px;
+}
+
+#logo_principal{
+    position: relative;
+    width: 35%;
+    height: 500px;
+    float: left;
+    background-image: url(../imagem/logo3.png) ;
+    background-size: contain;
+    background-repeat: no-repeat;
+    margin-left: 10px;
+
+}
+
+#sobreposto{
+    position: absolute;
+    width: 350px;
+    height: 500px; 
+    top: 21px;
+    left: 60px;
+    -webkit-transform: rotate(0deg);
+    transition: 5s all;
+}
+#sobreposto img{
+    width: 100%;
+    height: auto;
+}
+
+.ampulheta{
+    animation: spin 3s linear infinite;
+}
+
+@keyframes spin{
+    to {transform: rotate(360deg);}
+}
+
+
+#nome_slogan{
+    position: relative;
+    float: left;
+    width: 63%;
+    height: 190px;
+    margin-top: 170px;
+}
+
+#nome{
+    position: absolute;
+    width: 100%;
+    height: 150px;
+    font-family: 'Azonix';
+    color: #F7C745;
+    font-size: 59px;
+    align-items: center;
+    top: 10px;
+    display: flex;
+    justify-content: space-around;
+    text-align: left;
+    
+
+}
+#slogan{
+    position: absolute;
+    width: 100%;
+    height: 40px;
+    font-family: 'Anta';
+    color: #F7C745;
+    font-size: 22px;
+    align-items: center;
+    top: 125px;
+    display: flex;
+    justify-content: space-around;
+    text-align: left;
+    
+}
+/*-------------------------------quebra--------------------------*/
+#barra{
+    position: relative;
+    margin: auto;
+    margin-top: 80px;
+    display: flex;
+    justify-content: center;
+    width:75%;
+    border-bottom: 5px solid #F7C745;
+    opacity: 0.8;
+}
+
+/*-------------------------------banner apresentação --------------------------*/
+
+#banner_apresentacao{
+    position: relative;
+    width: 100%;
+    height: 350px;
+    margin-top: 100px;
+}
+
+#titulo1{
+    width: 100%;
+    height: 30%;
+    font-family: 'Anta';
+    color: #F7C745;
+    font-size: 40px;
+    align-items: center;
+    text-align: center;
+    display: flex;
+    justify-content: space-around;
+}
+
+#texto1{
+    width: 85%;
+    height: 70%;
+    font-family: 'Exo-semibold';
+    color: #ffffff;
+    font-size: 28px;
+    align-items: center;
+    text-align: center;
+    display: flex;
+    margin: auto;
+    justify-content: space-around;
+}
+
+/*-------------------------------banner epocas--------------------------*/
+#banner_passaporte{
+    position: relative;
+    width: 100%;
+    height: 650px;
+    margin-top: 150px;
+}
+
+#titulo2{
+    width: 100%;
+    height: 20%;
+    font-family: 'Anta';
+    color: #F7C745;
+    font-size: 37px;
+    align-items: center;
+    text-align: center;
+    display: flex;
+    justify-content: space-around;
+}
+#slides{
+    width: 100%;
+    height: 80%;
+}
+/*---------------------------slide------------------------------------------*/
+.container{
+    position: absolute;
+    transform: translate(-50%, - 50%);
+    width: 100%;
+    height: 500px;
+}
+
+.container .slide .item{
+    width: 200px;
+    height: 300px;
+    position: absolute;
+    top: 50%;
+    transform: translate(0, -50%);
+    border-radius: 20px;
+    box-shadow: 0 15px 50px #474747;
+    background-position: 50% 50%;
+    background-size: cover;
+    display: inline-block;
+    transition: 0.5s;
+}
+
+.slide .item:nth-child(1),
+.slide .item:nth-child(2) {
+    top: 0;
+    left: 0;
+    transform: translate(0, 0);
+    border-radius: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.slide .item:nth-child(3){
+    left: 50%;
+}
+.slide .item:nth-child(4){
+    left: calc(50% + 220px);
+}
+.slide .item:nth-child(5){
+    left: calc(50% + 440px);
+}
+.slide .item:nth-child(6){
+    left: calc(50% + 660px);
+    display: none;
+    
+}
+.slide .item:nth-child(7){
+    left: calc(50% + 880px);
+    display: none;
+}
+.slide .item:nth-child(8){
+    left: calc(50% + 1100px);
+    display: none;
+}
+.slide .item:nth-child(9){
+    left: calc(50% + 1320px);
+    display: none;
+}
+
+.item .content{
+    position: absolute;
+    left: 100px;
+    width: 400px;
+    height: 400px;
+    top: -120px;
+    text-align: left;
+    color: white;
+    transform: translate(0, 50%);
+    font-family: 'Exo-medium';
+    display: none;
+}
+/*Colocar class em épocas semelhantes*/
+
+.slide .item:nth-child(2) .content{
+    display: block;
+}
+
+/*----------------caracterização Brasil colonia e império--------------------*/
+.content .titulo3{
+    font-family: 'Special';
+    font-size: 20px;
+    text-transform: uppercase;
+    opacity: 0;
+    animation: animate 1s ease-in-out 0.3s 1 forwards;
+    padding-left: 15px;
+    padding-top: 35px;
+}
+.content .name1{
+    font-family: 'Island';
+    font-size: 55px;
+    font-weight:500;
+    opacity: 0;
+    animation: animate 1s ease-in-out 0.3s 1 forwards;
+    padding-left: 15px;
+}
+
+.content .des{
+    margin-top:10px;
+    margin-bottom: 30px;
+    opacity: 0;
+    animation: animate 1s ease-in-out 0.3s 1 forwards;
+    padding-left: 15px;
+    
+}
+
+/*---------------------caracterização Brasil república------------------*/
+.content .titulo4{
+    font-family: 'Special';
+    font-size: 20px;
+    text-transform: uppercase;
+    opacity: 0;
+    padding-left: 15px;
+    padding-top: 35px;
+    animation: animate 1s ease-in-out 0.3s 1 forwards;
+}
+.content .name2{
+    font-family: 'Special';
+    font-size: 55px;
+    font-weight:500;
+    opacity: 0;
+    padding-left: 15px;
+    animation: animate 1s ease-in-out 0.3s 1 forwards;
+}
+
+/*----------------animacao slide-------------------*/
+
+@keyframes animate{
+    from{
+        opacity: 0;
+        transform: translate(0, 100px);
+        filter: blur(50px);
+
+    }
+
+    to{
+        opacity: 1;
+        transform: translate(0);
+        filter: blur(0);
+
+    }
+    
+}
+
+/*----------------botao glow-------------------*/
+.no-border {
+    border: none;
+    background: none; 
+    padding: 10px 20px; 
+    cursor: pointer;
+  }
+
+button a{
+    text-transform: uppercase;
+    font-family: 'Exo-medium';
+    display: inline-block;
+    font-size: 15px;
+    letter-spacing: 1.6px;
+    color: rgba(255, 255, 255, .8);
+    background: #052D5C;
+    padding: 10px 30px;
+    text-decoration: none;
+    border-radius: 20px;
+    transition: .8s;
+    opacity: 0;
+    animation: animate 1s ease-in-out  0.3s 1 forwards;
+}
+
+button a:hover{
+    color: #F7C745;
+    text-shadow: 0 0 5px #F7C745;
+    box-shadow: 
+        0 0 10px #F7C745,
+        0 0 20px #F7C745,
+        0 0 30px #F7C745,
+        0 0 50px #F7C745,
+        0 0 100px #F7C745;
+    letter-spacing: 4px;
+}
+
+/*---------------botão de ação--------------------*/
+
+.botao{
+    width: 100%;
+    text-align: center;
+    position: absolute;
+    top: 450px
+}
+
+.botao button{
+    width: 55px;
+    height: 45px;
+    border-radius: 100px;
+    border: none;
+    cursor: pointer;
+    margin: 0 25px;
+    transition: 0.3s;
+}
+
+.botao button:hover{
+    background: #052D5C;
+    color: #ffffff;
+}
+
+/*------------------efeito embaçado----------------*/
+.content .glass{
+    background: linear-gradient(135deg, rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0));
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    border-radius: 20px;
+    box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.1);
+    animation: animate 1s ease-in-out 0.1s 1 forwards;
+}
+
+/* ---------------------------footer-------------------------*/
+
+footer {
+    position: relative;
+    width: 100%;
+    height: 200px;
+    background-color:  #F7C745;
+    font-family: 'Exo-medium';
+    color: #052D5C;
+}
+
+.footer-container{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+    margin: auto;
+}
+
+.footer-logo img{
+    width: 130px;
+    margin-top: 15px;
+}
+
+.footer-link {
+    display: flex;
+    gap: 150px;
+    text-align: left;
+}
+
+.itens-footer {
+    display: flex;
+    flex-direction: column;
+}
+
+.itens-footer h3 {
+    margin-bottom: 10px;
+}
+
+.itens-footer a {
+    text-decoration: none;
+    margin: 5px;
+    color:#052D5C;
+}
+
+.footer-social {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.footer-social a {
+    margin: 5px;
+}
+
+.direitos p{
+    width: 98.5%;
+    color: #F7C745;
+    text-align: center;
+    background-color: #052D5C;
+    padding: 10px;
+    margin-top: 10px;
+    font-size: 15px;
+    justify-content: center;
+}
+
+/*------------------------responsividade---------------------------*/
+
+@media (max-width: 500px){
+
+    main{
+        height: 1000px;
+
+    }
+    
+    #sobreposto{
+        display: none;
+    }
+    #nome_slogan{
+        position: relative;
+        float: left;
+        width: 63%;
+        height: 50px;
+    }
+    
+    #nome{
+        font-size: 32px;
+        width: 315px;
+        height: 50px;
+        top: -120px;
+        left: 10px;
+    }
+    #slogan{
+        font-size: 15px; 
+        top: -60px;
+        left: 10px;
+    }
+    #logo_principal{
+        height: 175px;
+    }
+    #barra{
+        margin-top: -220px;
+    }
+    #banner_apresentacao{
+        position: relative;
+        width: 100%;
+        height: 100px;
+        margin-top: 100px;
+    }
+    
+    #titulo1{
+        font-size: 25px;  
+        height: 100px;
+        
+    }
+    #titulo2{
+        display: none;
+    }
+    
+    #texto1{
+        margin-top: 10px;
+        font-size: 14px; 
+        height: 150px;
+    }
+    #banner_apresentacao{
+        height: 500px;
+        width: 450px;
+        margin-top: 0;
+        margin: auto;
+    }
+    #slides{
+        display: none;
+    }
+    footer {
+        position: relative;
+        width: 100%;
+        height: 415px;
+    }
+    .direitos p{
+        width: 96.2%;
+        
+    }
+    .footer-logo img{
+        width: 150px;
+        height: auto;
+        
+    }
+    .footer-social img {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        width: 50px;
+        height: 50px;
+        margin-top: 15px;
+    }
+    .itens-footer {
+        display: flex;
+        flex-direction: column;
+        font-size: 12px;
+        margin-top: 10px;
+    }
+    
+    .itens-footer h3 {
+        margin-top: 10px;
+    }
+    
+    .itens-footer a {
+        text-decoration: none;
+        color:#052D5C;
+    }
+    #nome_logo{
+        font-size: 20px;
+    }
+    
+}
