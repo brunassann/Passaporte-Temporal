@@ -1,5 +1,3 @@
-<h1 align="center">-- Passaporte Temporal --</h1>
-
 <p align="center">
   <img src="https://github.com/user-attachments/assets/81c36c26-6cda-49a3-afa2-bf86b8aefa90" alt="Passaporte Temporal">
 </p>
