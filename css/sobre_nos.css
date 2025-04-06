@@ -253,8 +253,9 @@ ul li ul ul {
 }
      
 #texto{
-    width: 100%;
-    height: 70%;
+    width: 75%;
+    height: 65%;
+    margin: auto;
     font-family: 'Exo-semibold';
     color: #ffffff;
     font-size: 27px;
