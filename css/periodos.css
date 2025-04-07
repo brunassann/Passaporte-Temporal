@@ -564,6 +564,70 @@ button a:hover {
     margin-right: 190px;
     padding-left: 25px;
 }
+/* ---------------------------footer-------------------------*/
 
+footer {
+    position: relative;
+    width: 100%;
+    height: 200px;
+    background-color:  #F7C745;
+    font-family: 'Exo-medium';
+    color: #052D5C;
+}
+
+.footer-container{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+    margin: auto;
+}
+
+.footer-logo img{
+    width: 130px;
+    margin-top: 15px;
+}
+
+.footer-link {
+    display: flex;
+    gap: 150px;
+    text-align: left;
+}
+
+.itens-footer {
+    display: flex;
+    flex-direction: column;
+}
+
+.itens-footer h3 {
+    margin-bottom: 10px;
+}
+
+.itens-footer a {
+    text-decoration: none;
+    margin: 5px;
+    color:#052D5C;
+}
+
+.footer-social {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.footer-social a {
+    margin: 5px;
+}
+
+.direitos p{
+    width: 98.5%;
+    color: #F7C745;
+    text-align: center;
+    background-color: #052D5C;
+    padding: 10px;
+    margin-top: 10px;
+    font-size: 15px;
+    justify-content: center;
+}
 
 
