@@ -1,0 +1,569 @@
+/* ----------------------------fontes---------------------------*/
+
+@font-face {
+    font-family: 'Azonix';
+    src: url('../font/Azonix.otf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Exo-bold';
+    src: url('../font/Exo2-Bold.otf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Exo-medium';
+    src: url('../font/Exo2-Medium.otf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Anta';
+    src: url('../font/Anta-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Exo-semibold';
+    src: url('../font/Exo2-SemiBold.otf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Island';
+    src: url('../font/IslandMoments-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Special';
+    src: url('../font/SpecialElite-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+/* --------------------para pegar toda a tela----------------------*/
+*{
+    padding: 0;
+    margin: 0;
+    }
+    
+    main{ 
+    position: relative;
+    margin: auto;
+    width: 100%;
+    height: 2270px;
+    background-image: url(../imagem/fundo2.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    z-index: 1;
+}
+
+main::after {
+    content: '';
+    background-color:#052D5C;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    left: 0;
+    top: 0;
+    opacity: .9;
+    z-index: -1;
+}
+
+/* --------------------barrinha de rolagem----------------------*/
+::-webkit-scrollbar {
+    width: 15px;
+}
+
+::-webkit-scrollbar-track {
+    background: #ddefff;
+    border-radius: 13px;
+}
+  
+::-webkit-scrollbar-thumb {
+    background-color:#052D5C;
+    border-radius: 10px;
+    border: 1px solid #ddefff;
+}
+
+/* --------------------header----------------------*/
+.barra_menu{
+    position: relative;
+    width: 100%;
+    height: 140px;
+    display: flex;
+    flex-direction: row;
+}
+
+#menu{
+    width: 30%;
+    height: 120px;
+    padding-top: 15px;
+    padding-left: 5px;
+    display: flex;
+    flex-direction: row;
+    margin-left: 25px;
+}
+
+#logo{
+    position: relative;
+    width: 120px;
+    height: 120px;
+    background-image: url('../imagem/logo_header.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+#nome_logo{
+    position: relative;
+    width: 250px;
+    height: 90px;
+    font-family: 'Azonix';
+    color: #F7C745;
+    font-size: 35px;
+    padding-top: 25px;
+    margin-left: 15px;
+}
+
+#navegacao{
+    width: 60%;
+    height: 50px;
+    padding-top: 15px;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    margin: auto;
+}
+/* --------------------navegação----------------------*/
+
+.barra_menu a {
+    position: relative;
+    width: 163px;
+    height: 35px;
+    text-align: center;
+    text-decoration: none;
+    font-size: 18px;
+    padding-top: 20px;
+    display: inline-block;
+    color: #F7C745;
+    transition: 0.3s ease-in-out;
+    font-family: 'Exo-bold';
+    margin-bottom: 10px;
+    margin-right: 35px;
+}
+
+.barra_menu a::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 0;
+    height: 5px;
+    background-color: #F7C745;
+    transition: width 0.3s ease-in-out;
+}
+
+.barra_menu a:hover::after {
+    width: 100%;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+ul li {
+    display: inline-block;
+    position: relative;
+}
+
+ul li a {
+    display: block;
+    text-decoration: none;
+    transition: 0.3s ease-in-out;
+    color: #F7C745;
+    position: relative;
+}
+
+ul li a::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 0;
+    height: 5px;
+    background-color: #F7C745;
+    transition: width 0.3s ease-in-out;
+}
+
+ul li a:hover::after {
+    width: 100%;
+}
+
+ul li ul {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 200px;
+    padding: 10px 5px;
+    display: none;
+    z-index: 999;
+    text-align: left;
+    background-color: #052D5C;
+    box-shadow: 5px 5px 10px rgba(179, 176, 0, 0.25);
+}
+
+ul li ul li {
+    display: block;
+    width: 100%;
+}
+
+ul li ul li a {
+    padding: 10px 15px;
+    font-size: 17px;
+    text-align: left;
+    display: block;
+}
+
+ul li:hover > ul {
+    display: block;
+}
+
+/* --------------------banner entrada----------------------*/
+#periodos{
+    position: relative;
+    margin: auto;
+    width: 85%;
+    height: 250px;
+    margin-top: 150px;
+}
+#titulo{
+    width: 100%;
+    height: 30%;
+    font-family: 'Anta';
+    color: #F7C745;
+    font-size: 37px;
+    align-items: center;
+    text-align: center;
+    display: flex;
+    justify-content: space-around;
+}
+     
+#texto{
+    width: 75%;
+    height: 65%;
+    margin: auto;
+    font-family: 'Exo-semibold';
+    color: #ffffff;
+    font-size: 25px;
+    align-items: center;
+    text-align: center;
+    display: flex;
+    justify-content: space-around;
+}
+
+/*------------------mural------------------*/
+#mural{
+    width: 85%;
+    height: 1550px;
+    margin: auto;
+    margin-top: 100px;
+    display: flex;
+    justify-content: space-between;
+}
+#esquerdo{
+    width: 48%;
+    height: 1500px;
+    float: left;
+    
+}
+#direito{
+    width: 48%;
+    height: 1290px;
+    float: left;
+    margin-top: 100px;
+}
+.blocosE {
+    width: 100%;
+    height: 285px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: space-between;
+    margin-bottom: 35px; /* <-- Aqui define o espaço entre os blocos */
+    background: linear-gradient(135deg, rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0.1));
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    border-radius: 20px;
+    box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.1);
+    animation: animate 1s ease-in-out 0.1s 1 forwards;
+    transition: transform 0.3s ease-in-out;
+}
+.blocosD {
+    width: 100%;
+    height: 285px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: space-between;
+    margin-bottom: 35px; /* <-- Aqui define o espaço entre os blocos */
+    background: linear-gradient(135deg, rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0.1));
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    border-radius: 20px;
+    box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.1);
+    animation: animate 1s ease-in-out 0.1s 1 forwards;
+    transition: transform 0.3s ease-in-out;
+    
+}
+.blocosE:hover{
+    transform: scale(1.07);
+}
+.blocosD:hover{
+    transform: scale(1.07);
+}
+
+/*----------------botao glow-------------------*/
+.no-border {
+    position: absolute;
+    border: none;
+    background: none; 
+    padding: 10px 20px; 
+    cursor: pointer;
+    margin-top: 190px;
+    margin-right: 310px;
+}
+
+/* Botão estilizado */
+button a {
+    text-transform: uppercase;
+    font-family: 'Exo-medium';
+    display: inline-block;
+    font-size: 15px;
+    letter-spacing: 1.6px;
+    color: rgba(255, 255, 255, .8);
+    background: #052D5C;
+    padding: 10px 30px;
+    text-decoration: none;
+    border-radius: 20px;
+    transition: .8s;
+    opacity: 0;
+    animation: fadeInUp 1s ease-in-out 0.3s forwards;
+}
+
+/* Efeito hover brilhante */
+button a:hover {
+    color: #F7C745;
+    text-shadow: 0 0 5px #F7C745;
+    box-shadow: 
+        0 0 10px #F7C745,
+        0 0 20px #F7C745,
+        0 0 30px #F7C745,
+        0 0 50px #F7C745,
+        0 0 100px #F7C745;
+    letter-spacing: 4px;
+}
+
+/* Animação do botão aparecendo */
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+.titulo-card {
+    font-family: 'Island';
+    font-size: 60px;
+    color: white;
+    margin-top: 25px;
+    margin-right: 210px;
+}
+.titulo-card2 {
+    font-family: 'Special';
+    font-size: 35px;
+    color: white;
+    margin-top: 45px;
+    margin-right: 150px;
+}
+.titulo-card3 {
+    font-family: 'Special';
+    font-size: 35px;
+    color: white;
+    margin-top: 45px;
+    margin-right: 250px;
+}
+
+.texto-card {
+    font-family: 'Exo-medium';
+    font-size: 17px;
+    color: white;
+    margin-bottom: 125px;
+    margin-right: 190px;
+}
+.imagem-card1 {
+    width: 50%; 
+    height: auto;
+    margin-top: -360px; 
+    margin-left: 270px;
+}
+.texto-card1 {
+    font-family: 'Exo-medium';
+    font-size: 17px;
+    color: white;
+    margin-bottom: 125px;
+    margin-right: 190px;
+    padding-left: 25px;
+}
+.imagem-card2 {
+    width: 55%; 
+    height: auto;
+    margin-top: -380px; 
+    margin-left: 280px;
+}
+.texto-card3 {
+    font-family: 'Exo-medium';
+    font-size: 17px;
+    color: white;
+    margin-bottom: 155px;
+    margin-right: 190px;
+    padding-left: 25px;
+}
+.imagem-card3 {
+    width: 50%; 
+    height: auto;
+    margin-top: -370px; 
+    margin-left: 320px;
+    border-radius: 55px;
+}
+.texto-card4 {
+    font-family: 'Exo-medium';
+    font-size: 17px;
+    color: white;
+    margin-bottom: 155px;
+    margin-right: 190px;
+    padding-left: 25px;
+}
+.imagem-card4 {
+    width: 47%; 
+    height: auto;
+    margin-top: -370px; 
+    margin-left: 320px;
+}
+.texto-card5 {
+    font-family: 'Exo-medium';
+    font-size: 17px;
+    color: white;
+    margin-bottom: 155px;
+    margin-right: 190px;
+    padding-left: 25px;
+}
+.imagem-card5 {
+    width: 42%; 
+    height: auto;
+    margin-top: -390px; 
+    margin-left: 320px;
+}
+.titulo-card3 {
+    font-family: 'Special';
+    font-size: 35px;
+    color: white;
+    margin-top: 45px;
+    margin-right: 190px;
+}
+.titulo-card4 {
+    font-family: 'Special';
+    font-size: 32px;
+    color: white;
+    margin-top: 45px;
+    margin-right: 190px;
+}
+.imagem-card6 {
+    width: 47%; 
+    height: auto;
+    margin-top: -390px; 
+    margin-left: 300px;
+}
+.titulo-card5 {
+    font-family: 'Island';
+    font-size: 60px;
+    color: white;
+    margin-top: 25px;
+    margin-right: 210px;
+}
+.texto-card6 {
+    font-family: 'Exo-medium';
+    font-size: 17px;
+    color: white;
+    margin-bottom: 155px;
+    margin-right: 190px;
+    padding-left: 25px;
+}
+.imagem-card7 {
+    width: 47%; 
+    height: auto;
+    margin-top: -390px; 
+    margin-left: 290px;
+    border-radius: 20px;
+}
+.texto-card7 {
+    font-family: 'Exo-medium';
+    font-size: 17px;
+    color: white;
+    margin-bottom: 155px;
+    margin-right: 190px;
+    padding-left: 25px;
+}
+.imagem-card8 {
+    width: 48%; 
+    height: auto;
+    margin-top: -390px; 
+    margin-left: 290px;
+    border-radius: 20px;
+}
+.texto-card8 {
+    font-family: 'Exo-medium';
+    font-size: 17px;
+    color: white;
+    margin-bottom: 155px;
+    margin-right: 190px;
+    padding-left: 25px;
+}
+.titulo-card8 {
+    font-family: 'Special';
+    font-size: 35px;
+    color: white;
+    margin-top: 45px;
+    margin-right: 270px;
+}
+.imagem-card9 {
+    width: 55%; 
+    height: auto;
+    margin-top: -390px; 
+    margin-left: 290px;
+    border-radius: 20px;
+}
+.texto-card9 {
+    font-family: 'Exo-medium';
+    font-size: 17px;
+    color: white;
+    margin-bottom: 155px;
+    margin-right: 190px;
+    padding-left: 25px;
+}
+
+
+
