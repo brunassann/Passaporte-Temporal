@@ -1,53 +1,81 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Primeiro Reinado</title>
-  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,800" rel="stylesheet">
-  <!-- SWIPER 4.5.0 (igual ao CodePen) -->
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.5.0/css/swiper.min.css">
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Special+Elite&display=swap" rel="stylesheet">
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link rel="icon" href="imagem/logo.png" /> 
-<link href="https://fonts.googleapis.com/css2?family=Island+Moments&family=Special+Elite&display=swap" rel="stylesheet">
-  <style>
-    :root {
-      --white: #fff;
-      --black: #000;
-      --primary: #ffffff;
-      --gray: #616161;
-    }
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Primeiro Reinado</title>
+    <link
+      href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,800"
+      rel="stylesheet"
+    />
+    <!-- SWIPER 4.5.0 (igual ao CodePen) -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.5.0/css/swiper.min.css"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Special+Elite&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="icon" href="imagem/logo.png" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Island+Moments&family=Special+Elite&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+    integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
 
-    @import url('https://fonts.googleapis.com/css2?family=Island+Moments&display=swap');
-    @import url('https://fonts.googleapis.com/css2?family=Special+Elite&display=swap');
+    <link
+    rel="stylesheet"
+    href="https://unpkg.com/swiper/swiper-bundle.min.css"
+  />
+  <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    integrity="sha512-pN5x9m8U6OlhPkC8O9ZgvckQqed8aLzBxby91mqbVPvFa3xFVhHkV3u0b2u0icqUl5b8+4N3avK5xyhybYoz1w=="
+    crossorigin="anonymous"
+    referrerpolicy="no-referrer"
+  />
+  <link rel="stylesheet" href="./music/music.css">
+    <style>
+      :root {
+        --white: #fff;
+        --black: #000;
+        --primary: #ffffff;
+        --gray: #616161;
+      }
 
-@font-face {
-    font-family: 'Azonix';
-    src: url("./font/Azonix.otf") format('truetype');
-    font-weight: normal;
-    font-style: normal;
-}
+      @import url("https://fonts.googleapis.com/css2?family=Island+Moments&display=swap");
+      @import url("https://fonts.googleapis.com/css2?family=Special+Elite&display=swap");
 
-@font-face {
-    font-family: 'Exo-bold';
-    src: url("./font/Exo2-Bold.otf") format('truetype');
-    font-weight: normal;
-    font-style: normal;
-}
+      @font-face {
+        font-family: "Azonix";
+        src: url("./font/Azonix.otf") format("truetype");
+        font-weight: normal;
+        font-style: normal;
+      }
 
-@font-face {
-    font-family: 'Exo-medium';
-    src: url('./font/Exo2-Medium.otf') format('truetype');
-    font-weight: normal;
-    font-style: normal;
-}
-    
-/* --------------------header----------------------*/
-.barra_menu {
+      @font-face {
+        font-family: "Exo-bold";
+        src: url("./font/Exo2-Bold.otf") format("truetype");
+        font-weight: normal;
+        font-style: normal;
+      }
+
+      @font-face {
+        font-family: "Exo-medium";
+        src: url("./font/Exo2-Medium.otf") format("truetype");
+        font-weight: normal;
+        font-style: normal;
+      }
+
+      /* --------------------header----------------------*/
+      .barra_menu {
         position: relative;
         width: 100%;
         height: 140px;
@@ -59,899 +87,1424 @@
         background-repeat: no-repeat;
       }
 
-#menu{
-    width: 30%;
-    height: 120px;
-    padding-top: 15px;
-    padding-left: 5px;
-    display: flex;
-    flex-direction: row;
-    margin-left: 25px;
-}
-
-#logo{
-    position: relative;
-    width: 120px;
-    height: 120px;
-    background-image: url(imagem/elemento1.png);
-    background-size: contain;
-    background-repeat: no-repeat;
-}
-
-#nome_logo{
-    position: relative;
-    width: 250px;
-    height: 90px;
-    font-family: 'Azonix';
-    color: #052D5C;
-    font-size: 35px;
-    padding-top: 25px;
-    margin-left: 15px;
-}
-
-#navegacao{
-    width: 60%;
-    height: 50px;
-    padding-top: 15px;
-    position: relative;
-    display: flex;
-    align-items: center;
-    justify-content: space-around;
-    margin: auto;
-}
-/* --------------------navegação----------------------*/
-
-.barra_menu a {
-    position: relative;
-    width: 163px;
-    height: 35px;
-    text-align: center;
-    text-decoration: none;
-    font-size: 18px;
-    padding-top: 20px;
-    display: inline-block;
-    color:#052D5C;
-    transition: 0.3s ease-in-out;
-    font-family: 'Exo-bold';
-    margin-bottom: 10px;
-    margin-right: 35px;
-    display: inline-block;
-}
-
-.barra_menu a::after {
-    content: "";
-    position: absolute;
-    left: 0;
-    bottom: 0;
-    width: 0;
-    height: 5px;
-    background-color: #052D5C;
-    transition: width 0.3s ease-in-out;
-}
-
-.barra_menu a:hover::after {
-    width: 100%;
-}
-
-ul {
-    list-style: none;
-    padding: 0;
-    margin: 0;
-}
-
-ul li {
-    display: inline-block;
-    position: relative;
-}
-
-ul li a {
-    display: block;
-    text-decoration: none;
-    transition: 0.3s ease-in-out;
-    color: #052D5C;
-    position: relative;
-}
-
-ul li a::after {
-    content: "";
-    position: absolute;
-    left: 0;
-    bottom: 0;
-    width: 0;
-    height: 5px;
-    background-color: #052D5C;
-    transition: width 0.3s ease-in-out;
-}
-
-ul li a:hover::after {
-    width: 100%;
-}
-
-ul li ul {
-    position: absolute;
-    top: 100%;
-    left: 0;
-    width: 200px;
-    padding: 10px 5px;
-    display: none;
-    z-index: 999;
-    text-align: left;
-    background-color: #F7C745;
-    box-shadow: 5px 5px 10px rgba(179, 176, 0, 0.25);
-
-}
-
-ul li ul li {
-    display: block;
-    width: 100%;
-}
-
-ul li ul li a {
-    padding: 10px 15px;
-    font-size: 17px;
-    text-align: left;
-    display: block;
-}
-
-ul li:hover > ul {
-    display: block;
-}
-
-ul li ul ul {
-    left: 105%;
-    top: -65px;
-    position: absolute;
-}
-
-#bemVindo {    
-    width: 100%;
-    height: 590px;
-    color: #052D5C;
-    position: relative;
-    text-align: center;   
-    overflow: hidden; /* Garante que nada do vídeo saia da área definida */
-    margin:0px;
-}
-
-#fundo-imagem::after {
-    content: "";
-    /* background-color: black; Escurece o vídeo para dar contraste */
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    z-index: 1; /* Coloca a sobreposição sobre o vídeo */
-    opacity: .6;
-}
-
-#fundo-imagem {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    z-index: -1; /* Coloca o vídeo atrás do conteúdo */
-    background-image: url(imagem/background.jpg);
-    background-repeat: no-repeat;
-    background-size: cover;
-}
-
-@keyframes flutuar {
-    0% { transform: translateY(0); }
-    50% { transform: translateY(-10px); }
-    100% { transform: translateY(0); }
-}
-
-#bemVindo img {
-    width: 140px;
-    height: 150px;
-    margin-top: 40px;
-    margin-bottom: -10px;
-    filter: drop-shadow(5px 5px 20px rgba(0, 0, 0, 0.5));
-    animation: flutuar 4s ease-in-out infinite;
-}  
-
-#bemVindo p {
-    font-family: "Special Elite", system-ui;
-    font-size: 2.8rem;
-    text-transform: uppercase;
-    margin:0px;
-}
-
-#bemVindo h1 {
-    font-family: "Island Moments", cursive;
-    font-size: 13rem;
-    font-weight: 500;
-    margin:0px;
-}
-
-#bemVindo h2 {
-    font-family: "Special Elite", system-ui;
-    font-size: 2.8rem;
-    font-weight: 200;
-    margin:0px;
-}
-
-#periodos{
-    position: relative;
-    background-image: url(imagem/fundo2.png);
-    background-size: cover;
-    width: 100%;
-    height: 6700px;
-    background-image: url(imagem/background.jpg);
-    background-repeat: no-repeat;
-    background-size: cover;
-}
-
-
-
-
-    html, body, .container { 
-      margin: 0;
-      padding: 0;
-    }
-
-    body {
-      font-family: 'Open Sans', sans-serif;
-      font-size: 14px;
-      
-    }
-
-    .container {
-      
-      background-color: var(--white);
-      flex-direction: column;
-      box-sizing: border-box;
-
-    }
-
-    .title {
-      font-size: 38px;
-      color: var(--gray);
-      font-style: italic;
-      font-weight: 800;
-      margin-bottom: 30px;
-    }
-
-    /* TIMELINE */
-    .timeline {
-      width: 100%;
-      max-width: 1200px;
-      background-color: var(--white);
-      box-shadow: 0 5px 25px 5px rgba(0, 0, 0, 0.2);
-    }
-
-    .timeline .swiper-container {
-      height: 100vh;
-      width: 100vw;
-      position: relative;
-    }
-
-    .timeline .swiper-wrapper {
-      transition: 2s cubic-bezier(0.68, -0.4, 0.27, 1.34) 0.2s;
-    }
-
-    .timeline .swiper-slide {
-      position: relative;
-      color: var(--white);
-      overflow: hidden;
-      background-size: cover;
-      background-repeat: no-repeat;
-      background-position: center center;
-    }
-
-    .timeline .swiper-slide::after {
-      content: "";
-      position: absolute;
-      z-index: 1;
-      right: -115%;
-      bottom: -10%;
-      width: 100%;
-      height: 100%;
-      background-color: rgba(0, 0, 0, 0.7);
-      box-shadow: -230px 0 150px 60vw rgba(0, 0, 0, 0.7);
-      border-radius: 100%;
-    }
-
-    .timeline .swiper-slide-content {
-      position: absolute;
-      text-align: center;
-      width: 80%;
-      max-width: 310px;
-      right: 50%;
-      top: 13%;
-      transform: translate(50%, 0);
-      font-size: 12px;
-      z-index: 2;
-    }
-
-    .timeline .timeline-year {
-      display: block;
-      font-style: italic;
-      font-size: 42px;
-      margin-bottom: 50px;
-      transform: translate3d(20px, 0, 0);
-      color: var(--primary);
-      font-weight: 300;
-      opacity: 0;
-      transition: 0.2s ease 0.4s;
-    }
-
-    .timeline .timeline-title {
-      font-weight: 800;
-      font-size: 34px;
-      margin: 0 0 30px;
-      opacity: 0;
-      transform: translate3d(20px, 0, 0);
-      transition: 0.2s ease 0.5s;
-    }
-
-    .timeline .timeline-text {
-      line-height: 1.5;
-      opacity: 0;
-      transform: translate3d(20px, 0, 0);
-      transition: 0.2s ease 0.6s;
-      font-size: 14px;
-    }
-
-    /* SLIDE ATIVO */
-    .timeline .swiper-slide-active .timeline-year {
-      opacity: 1;
-      transform: translate3d(0, 0, 0);
-      transition: 0.4s ease 1.6s;
-    }
-
-    .timeline .swiper-slide-active .timeline-title {
-      opacity: 1;
-      transform: translate3d(0, 0, 0);
-      transition: 0.4s ease 1.7s;
-    }
-
-    .timeline .swiper-slide-active .timeline-text {
-      opacity: 1;
-      transform: translate3d(0, 0, 0);
-      transition: 0.4s ease 1.8s;
-    }
-
-    /* PAGINAÇÃO */
-    .timeline .swiper-pagination {
-      right: 15% !important;
-      height: 100%;
-      display: none;
-      flex-direction: column;
-      justify-content: center;
-      font-style: italic;
-      font-weight: 300;
-      font-size: 18px;
-      z-index: 1;
-    }
-
-    .timeline .swiper-pagination::before {
-      content: "";
-      position: absolute;
-      left: -30px;
-      top: 0;
-      height: 100%;
-      width: 1px;
-      background-color: rgba(255, 255, 255, 0.2);
-    }
-
-    .timeline .swiper-pagination-bullet {
-      width: auto;
-      height: auto;
-      text-align: center;
-      opacity: 1;
-      background: transparent;
-      color: var(--primary);
-      margin: 15px 0 !important;
-      position: relative;
-      display: inline-block;
-    }
-
-    .timeline .swiper-pagination-bullet::before {
-      content: "";
-      position: absolute;
-      top: 8px;
-      left: -32.5px;
-      width: 6px;
-      height: 6px;
-      border-radius: 100%;
-      background-color: var(--primary);
-      transform: scale(0);
-      transition: 0.2s;
-    }
-
-    .timeline .swiper-pagination-bullet-active {
-      color: var(--primary);
-    }
-
-    .timeline .swiper-pagination-bullet-active::before {
-      transform: scale(1);
-    }
-
-    /* NAVEGAÇÃO */
-    .timeline .swiper-button-next,
-    .timeline .swiper-button-prev {
-      background-size: 20px 20px;
-      top: 15%;
-      width: 20px;
-      height: 20px;
-      margin-top: 0;
-      z-index: 2;
-      transition: 0.2s;
-    }
-
-    .timeline .swiper-button-prev {
-      left: 8%;
-      background-image: url("data:image/svg+xml;charset=utf-8,%3Csvg%20xmlns%3D'http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg'%20viewBox%3D'0%200%2027%2044'%3E%3Cpath%20d%3D'M0%2C22L22%2C0l2.1%2C2.1L4.2%2C22l19.9%2C19.9L22%2C44L0%2C22L0%2C22L0%2C22z'%20fill%3D'%23d4a024'%2F%3E%3C%2Fsvg%3E");
-    }
-
-    .timeline .swiper-button-prev:hover {
-      transform: translateX(-3px);
-    }
-
-    .timeline .swiper-button-next {
-      right: 8%;
-      background-image: url("data:image/svg+xml;charset=utf-8,%3Csvg%20xmlns%3D'http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg'%20viewBox%3D'0%200%2027%2044'%3E%3Cpath%20d%3D'M27%2C22L27%2C22L5%2C44l-2.1-2.1L22.8%2C22L2.9%2C2.1L5%2C0L27%2C22L27%2C22z'%20fill%3D'%23d4a024'%2F%3E%3C%2Fsvg%3E");
-    }
-
-    .timeline .swiper-button-next:hover {
-      transform: translateX(3px);
-    }
-
-    footer {
-    position: relative;
-    width: 100%;
-    height: 200px;
-    font-family: 'Exo-medium';
-    color: #F7C745;
-    z-index: 100;
-}
-
-.footer-container{
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    flex-wrap: wrap;
-    margin: auto;
-    background-color: #052D5C;
-    color: #F7C745;
-    font-family:'Exo-medium';
-}
-
-.footer-logo img{
-    width: 130px;
-    margin-top: 15px;
-}
-
-.footer-link {
-    display: flex;
-    gap: 150px;
-    text-align: left;
-}
-
-.itens-footer {
-    display: flex;
-    flex-direction: column;
-}
-
-.itens-footer h3 {
-    margin-bottom: 10px;
-}
-
-.itens-footer a {
-    text-decoration: none;
-    margin: 5px 0px;
-    color:#F7C745;
-}
-
-.footer-social {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-}
-
-.footer-social a {
-    margin: 5px;
-}
-
-.direitos p{
-    width: 98.5%;
-    color: #052D5C;
-    background-color: #F7C745;
-    text-align: center;
-    padding: 10px;
-    margin-top: 1px;
-    font-size: 15px;
-    justify-content: center;
-    font-family:'Exo-medium';
-    
-}
-/* --------------------barrinha de rolagem----------------------*/
-::-webkit-scrollbar {
-    width: 15px;
-}
-
-::-webkit-scrollbar-track {
-    background: #ddefff;
-    border-radius: 13px;
-}
-  
-::-webkit-scrollbar-thumb {
-    background-color:#052D5C;
-    border-radius: 10px;
-    border: 1px solid #ddefff;
-}
-
-    /* RESPONSIVO */
-
-    @media (max-width: 500px) {
-    .barra_menu {
-        width: 100%;
-        height: 320px;
-        display: flex;
-        flex-direction: column;
-        justify-content: space-between;
-        background-image: url(imagem/background.jpg);
-        background-size: cover;
-        background-repeat: no-repeat;
-    }
-
-    #menu {
-        width: 100%;
+      #menu {
+        width: 30%;
         height: 120px;
-        padding-top: 15px;      
-    }
+        padding-top: 15px;
+        padding-left: 5px;
+        display: flex;
+        flex-direction: row;
+        margin-left: 25px;
+      }
 
-    #navegacao{
-        width: 90%;
-        height: 220px;
-        background-color: #d9534f;
-        margin: auto;
-    }
-
-    #navegacao a{
-        font-size: 15px;
-        height: 23%;
-        padding: 15px;
-        background-color: #F7C745;
-       
-    }
-    
-    #logo {
+      #logo {
         position: relative;
         width: 120px;
         height: 120px;
         background-image: url(imagem/elemento1.png);
         background-size: contain;
         background-repeat: no-repeat;
-    }
-    
-    #nome_logo {
+      }
+
+      #nome_logo {
         position: relative;
         width: 250px;
         height: 90px;
-        font-family: 'Azonix';
-        color: #052D5C;
+        font-family: "Azonix";
+        color: #052d5c;
         font-size: 35px;
         padding-top: 25px;
         margin-left: 15px;
-    }
+      }
 
-    #bemVindo {
-        width: 100%;
-        text-align: center;
-    }
-
-    #bemVindo img {
-        width: 100px;
-        height: 100px;
-    }
-
-    #bemVindo h1 {
-        font-size: 70px;
-        margin-top: 5px;
-    }
-
-    #bemVindo p {
-        font-size: 18px;
-    }
-
-    #bemVindo h2 {
-        font-size: 18px
-    }
-
-    .linhaContainer {
-        width: 90%;
-        height: 520px;
-    }
-
-    .linhaContainer .ano {
-        font-size: 25px;
-        width: 35%;
+      #navegacao {
+        width: 60%;
         height: 50px;
-    }
+        padding-top: 15px;
+        position: relative;
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        margin: auto;
+      }
+      /* --------------------navegação----------------------*/
 
-    .linhaContainer .caixa {
-        width: 90%;
-        height: 400px;
-    }
-
-    .textos h1 {
-        font-size: 28px;
-        margin-top: 0px;
-    }
-
-    .textos p {
+      .barra_menu a {
+        position: relative;
+        width: 163px;
+        height: 45px;
+        text-align: center;
+        text-decoration: none;
         font-size: 18px;
-    }
-
-    .abrirModal {
-        width: 40%;
-        height: 12%;
-        font-size: 14px;
-    }
-
-    .caixa {
-        background-position: center;
-    }
-}
-    @media screen and (min-width: 768px) {
-      .timeline .swiper-slide::after {
-        right: -30%;
-        bottom: -8%;
-        width: 240px;
-        height: 50%;
-        box-shadow: -230px 0 150px 50vw rgba(0, 0, 0, 0.7);
+        padding-top: 20px;
+        display: inline-block;
+        color: #052d5c;
+        transition: 0.3s ease-in-out;
+        font-family: "Exo-bold";
+        margin-bottom: 10px;
+        margin-right: 35px;
+        display: inline-block;
       }
 
-      .timeline .swiper-slide-content {
-        right: 30%;
-        top: 50%;
-        transform: translateY(-50%);
-        width: 310px;
-        font-size: 11px;
-        text-align: right;
+      .barra_menu a::after {
+        content: "";
+        position: absolute;
+        left: 0;
+        bottom: 0;
+        width: 0;
+        height: 5px;
+        background-color: #052d5c;
+        transition: width 0.3s ease-in-out;
       }
 
-      .timeline .timeline-year {
-        margin-bottom: 0;
-        font-size: 32px;
+      .barra_menu a:hover::after {
+        width: 100%;
       }
 
-      .timeline .timeline-title {
-        font-size: 40px;
+      ul {
+        list-style: none;
+        padding: 0;
         margin: 0;
       }
 
-      .timeline .swiper-pagination {
-        display: flex;
+      ul li {
+        display: inline-block;
+        position: relative;
       }
 
-      .timeline .swiper-button-prev {
-        top: 15%;
-        left: auto;
-        right: 15%;
-        transform: rotate(90deg) translate(0, 10px);
+      ul li a {
+        display: block;
+        text-decoration: none;
+        transition: 0.3s ease-in-out;
+        color: #052d5c;
+        position: relative;
       }
 
-      .timeline .swiper-button-prev:hover {
-        transform: rotate(90deg) translate(-3px, 10px);
+      ul li a::after {
+        content: "";
+        position: absolute;
+        left: 0;
+        bottom: 0;
+        width: 0;
+        height: 5px;
+        background-color: #052d5c;
+        transition: width 0.3s ease-in-out;
       }
 
-      .timeline .swiper-button-next {
-        top: auto;
-        bottom: 15%;
-        right: 15%;
-        transform: rotate(90deg) translate(0, 10px);
+      ul li a:hover::after {
+        width: 100%;
       }
 
-      .timeline .swiper-button-next:hover {
-        transform: rotate(90deg) translate(3px, 10px);
+      ul li ul {
+        position: absolute;
+        top: 100%;
+        left: 0;
+        width: 200px;
+        padding: 10px 5px;
+        display: none;
+        z-index: 999;
+        text-align: left;
+        background-color: #f7c745;
+        box-shadow: 5px 5px 10px rgba(179, 176, 0, 0.25);
       }
-    }
 
-    @media screen and (min-width: 1024px) {
+      ul li ul li {
+        display: block;
+        width: 100%;
+      }
+
+      ul li ul li a {
+        padding: 10px 15px;
+        font-size: 17px;
+        text-align: left;
+        display: block;
+      }
+
+      ul li:hover > ul {
+        display: block;
+      }
+
+      ul li ul ul {
+        left: 105%;
+        top: -65px;
+        position: absolute;
+      }
+
+      #bemVindo {
+        width: 100%;
+        height: 590px;
+        color: #052d5c;
+        position: relative;
+        text-align: center;
+        overflow: hidden; /* Garante que nada do vídeo saia da área definida */
+        margin: 0px;
+      }
+
+      #fundo-imagem::after {
+        content: "";
+        /* background-color: black; Escurece o vídeo para dar contraste */
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        z-index: 1; /* Coloca a sobreposição sobre o vídeo */
+        opacity: 0.6;
+      }
+
+      #fundo-imagem {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        z-index: -1; /* Coloca o vídeo atrás do conteúdo */
+        background-image: url(imagem/background.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+      }
+
+      @keyframes flutuar {
+        0% {
+          transform: translateY(0);
+        }
+        50% {
+          transform: translateY(-10px);
+        }
+        100% {
+          transform: translateY(0);
+        }
+      }
+
+      #bemVindo img {
+        width: 140px;
+        height: 150px;
+        margin-top: 40px;
+        margin-bottom: -10px;
+        filter: drop-shadow(5px 5px 20px rgba(0, 0, 0, 0.5));
+        animation: flutuar 4s ease-in-out infinite;
+      }
+
+      #bemVindo p {
+        font-family: "Special Elite", system-ui;
+        font-size: 2.8rem;
+        text-transform: uppercase;
+        margin: 0px;
+      }
+
+      #bemVindo h1 {
+        font-family: "Island Moments", cursive;
+        font-size: 13rem;
+        font-weight: 500;
+        margin: 0px;
+      }
+
+      #bemVindo h2 {
+        font-family: "Special Elite", system-ui;
+        font-size: 2.8rem;
+        font-weight: 200;
+        margin: 0px;
+      }
+
+      #periodos {
+        position: relative;
+        background-image: url(imagem/fundo2.png);
+        background-size: cover;
+        width: 100%;
+        height: 6700px;
+        background-image: url(imagem/background.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+      }
+
+      html,
+      body,
+      .container {
+        margin: 0;
+        padding: 0;
+      }
+
+      body {
+        font-family: "Open Sans", sans-serif;
+        font-size: 14px;
+      }
+
+      .container {
+        background-color: var(--white);
+        flex-direction: column;
+        box-sizing: border-box;
+      }
+
+      .title {
+        font-size: 38px;
+        color: var(--gray);
+        font-style: italic;
+        font-weight: 800;
+        margin-bottom: 30px;
+      }
+
+      /* TIMELINE */
+      .timeline {
+        width: 100%;
+        max-width: 1200px;
+        background-color: var(--white);
+        box-shadow: 0 5px 25px 5px rgba(0, 0, 0, 0.2);
+      }
+
+      .timeline .swiper-container {
+        height: 100vh;
+        width: 100vw;
+        position: relative;
+      }
+
+      .timeline .swiper-wrapper {
+        transition: 2s cubic-bezier(0.68, -0.4, 0.27, 1.34) 0.2s;
+      }
+
+      .timeline .swiper-slide {
+        position: relative;
+        color: var(--white);
+        overflow: hidden;
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center center;
+      }
+
       .timeline .swiper-slide::after {
-        right: -20%;
-        bottom: -12%;
-        width: 240px;
-        height: 50%;
-        box-shadow: -230px 0 150px 39vw rgba(0, 0, 0, 0.7);
+        content: "";
+        position: absolute;
+        z-index: 1;
+        right: -115%;
+        bottom: -10%;
+        width: 100%;
+        height: 100%;
+        background-color: rgba(0, 0, 0, 0.7);
+        box-shadow: -230px 0 150px 60vw rgba(0, 0, 0, 0.7);
+        border-radius: 100%;
       }
 
       .timeline .swiper-slide-content {
-        right: 25%;
+        position: absolute;
+        text-align: center;
+        width: 80%;
+        max-width: 310px;
+        right: 50%;
+        top: 13%;
+        transform: translate(50%, 0);
+        font-size: 12px;
+        z-index: 2;
       }
-    }
-  </style>
-</head>
 
-<body>
-  <nav class="barra_menu">
-    <div id="menu">
-        <div id="logo"></div>
-        <div id="nome_logo">PASSAPORTE TEMPORAL</div>
-    </div>
+      .timeline .timeline-year {
+        display: block;
+        font-style: italic;
+        font-size: 42px;
+        margin-bottom: 50px;
+        transform: translate3d(20px, 0, 0);
+        color: var(--primary);
+        font-weight: 300;
+        opacity: 0;
+        text-align: left;
+      }
 
-    <div id="navegacao">
-        <ul>
-            <li><a href="index.html">Início</a></li>
-            <li><a href="sobre_nos.html">Sobre nós</a></li>
-            <li>
-                <a href="#">Períodos &#x25BE;</a>
-                <ul class="dropdown1">
-                    <li><a href="colonial.html">Colonial</a></li>
-                    <li>
-                        <a href="#">Imperial &#x25BE;</a>
-                        <ul class="dropdown2">
-                            <li><a href="primeiro_reinado.html">Primeiro Reinado</a></li>
-                            <li><a href="periodo_regencial.html">Período Regencial</a></li>
-                            <li><a href="segundo_reinado.html">Segundo Reinado</a></li>
-                        </ul>
-                    </li>
-                    <li>
-                        <a href="#">Republicano &#x25BE;</a>
-                        <ul class="dropdown3">
-                            <li><a href="primeira_republica.html">Primeira República</a></li>
-                            <li><a href="era_vargas.html">Era Vargas</a></li>
-                            <li><a href="republica_populista.html">República Populista</a></li>
-                            <li><a href="ditadura_militar.html">Ditadura Militar</a></li>
-                            <li><a href="nova_republica.html">Nova República</a></li>
-                        </ul>
-                    </li>
+      .timeline .timeline-title {
+        font-weight: 800;
+        margin: 0 0 30px;
+        opacity: 0;
+        transform: translate3d(20px, 0, 0);
+        transition: 0.2s ease 0.5s;
+        text-align: left;
+      }
 
-                </ul>
-            </li>
-            <li><a href="brasil_do_amanha.html">Brasil do amanhã</a></li>
-        </ul>
-    </div>
-</nav>
+      .timeline .timeline-text {
+        line-height: 1.5;
+        opacity: 0;
+        transform: translate3d(20px, 0, 0);
+        transition: 0.2s ease 0.6s;
+        font-size: 14px;
+        text-align: left;
+      }
 
-  <section id="bemVindo">
-    <div id="fundo-imagem"></div>
-    
-    <img
-      src="imagem/coroareal.png"
-      alt="Coroa Real"
-      style="cursor: pointer"
-    />
-    <p>Bem-vindo ao:</p>
-    <h1>Primeiro Reinado</h1>
-    <h2>(1822-1831)</h2>
-  </section>
-  <div class="container">
-    <div class="timeline">
-      <div class="swiper-container">
-        <div class="swiper-wrapper">
-          <div class="swiper-slide" style="background-image: url(imagem/poclamaçãoRepublica.jpg)" alt="comeco_da_republica" data-year="1822">
-            <div class="swiper-slide-content">
-              <span class="timeline-year">1822</span>
-              <h5 class="timeline-title">Proclamação da Independência</h5>
-              <p class="timeline-text">
-                No dia 7 de setembro de 1822, D. Pedro 1º declarou independência do Brasil às margens do rio Ipiranga. A historiadora Luciene Carris define o acontecimento como "um dos mais importantes da história do país". "É um episódio que corresponde ao fim do domínio português sobre o Brasil, principalmente nas relações econômicas e políticas", falou. Ainda de acordo com Luciene, os efeitos da independência não foram imediatos em todo o Brasil. </p>
-            </div>
-          </div>
-          <div class="swiper-slide" style="background-image: url(imagem/constituicao.jpg)"  alt="era_vargas" data-year="1824">
-            <div class="swiper-slide-content">
-              <span class="timeline-year">1824</span>
-              <h5 class="timeline-title">Constituição</h5>
-              <p class="timeline-text">A elaboração da Constituição de 1824 estava inserida no contexto de independência e consolidação do Brasil enquanto nação. O Brasil havia declarado a sua independência no dia 7 de setembro de 1822 como resultado dos desentendimentos entre as Cortes portuguesas e as elites econômicas e políticas brasileiras. As Cortes desejavam “recolonizar” o Brasil, enquanto as elites daqui procuravam manter o nível de autonomia conquistado durante o Período Joanino. Essa diferença nos interesses e a postura cada vez mais intransigente das Cortes permitiram que se instaurasse no país um clima favorável pela sua independência
+      .abrirModal {
+        width: 50%;
+        background-color: #f7c84581;
+        font-size: 24px;
+        text-align: center;
+        padding: 10px;
+        color: white;
+        border: none;
+        border-radius: 15px;
+        cursor: pointer;
+        margin-right: 100%;
+        margin-top: 5%;
+        position: relative;
+      }
 
-              </div>
-          </div>
-          
-          <div class="swiper-slide" style="background-image: url(imagem/guerraCisplatina.jpg)" alt="rep_populista" data-year="1825">
-            <div class="swiper-slide-content">
-              <span class="timeline-year">1825</span>
-              <h5 class="timeline-title">Guerra da Cisplatina</h5>
-              <p class="timeline-text">Para o império brasileiro, era fundamental acabar com a rebelião na província do sul. Dom Pedro I se tornou imperador e, assim, tinha como principal objetivo a manutenção territorial do Brasil. A Província Unida estava do lado de Lavalleja e esperava a anexação da Cisplatina, obtendo o domínio do território. Iniciada a rebelião, em 1825, Dom Pedro I enviou tropas para a área. Os soldados brasileiros foram autoritários e truculentos com a população local, o que provocou reações negativas. A crise econômica que o império atravessava impediu investimento em armamentos e treinamentos para os soldados combaterem os inimigos.
-              </div>
-          </div>
-          <div class="swiper-slide" style="background-image: url(imagem/sucessaoPortuguesa.jpg)" alt="ditadura_militar" data-year="1826">
-            <div class="swiper-slide-content">
-              <span class="timeline-year">1826</span>
-              <h5 class="timeline-title">Sucessão Portuguesa</h5>
-              <p class="timeline-text"> Dom Pedro e Dom Miguel: a Querela da Sucessão demonstra a reação dos portugueses à Independência do Brasil e a mágoa gerada em relação a Dom Pedro, que virou imperador brasileiro no final de 1822. Em 10 de março de 1826, o pai dele, Dom João VI, rei de Portugal, morreu aos 59 anos. Pedro de Alcântara, o então imperador Dom Pedro I do Brasil, foi coroado também rei de Portugal sob o nome de D. Pedro IV. Ficou no cargo apenas até maio de 1826, e abdicou do trono em nome da filha Maria da Glória, na época com sete anos. Ele determinou que seu irmão, Dom Miguel, seria o tutor até que ela atingisse a maioridade, e que deveria se casar com a sobrinha. Pedro também outorgou uma constituição a Portugal em 1826. No entanto, Dom Miguel, com apoio da mãe Carlota Joaquina, anulou essa constituição e rejeitou a sobrinha como rainha e noiva. Em 7 de abril de 1831, Dom Pedro I entregou a carta de renúncia e retornou para Portugal. </div>
-          </div>
-          <div class="swiper-slide" style="background-image: url(imagem/manifestacoes.jpg)" alt="nova_rep" data-year="1830">
-            <div class="swiper-slide-content">
-              <span class="timeline-year">1830</span>
-              <h5 class="timeline-title">Manifestações</h5>
-              <p class="timeline-text">Giovanni Battista Líbero Badaró foi um jornalista italiano erradicado no Brasil que foi assassinado em 1830, em plena crise política do Primeiro Reinado. Crise que se agravou com a morte do oposicionista, pois Badaró era uma importante figura na crítica aos acontecimentos políticos daqueles tempos através do jornal Observatório Constitucional. O que se diz é que Líbero Badaró morreu pela defesa que praticava pela liberdade de imprensa contra os abusos da monarquia e da Constituição. Também teria sido executado por atacar a maior autoridade jurídica de São Paulo, Ladislau Japiaçu e os autoritarismos da província. Entretanto, muitos historiadores discutem que Dom Pedro I estaria envolvido no crime. </div>
-          </div>
-          <div class="swiper-slide" style="background-image: url(imagem/abdicacaoTrono.jpg)" alt="nova_rep" data-year="1831">
-            <div class="swiper-slide-content">
-              <span class="timeline-year">1831</span>
-              <h5 class="timeline-title">Abdicação de D. Pedro I</h5>
-              <p class="timeline-text">Em 7 de abril de 1831, o imperador D. Pedro I apresentou a carta de abdicação ao trono brasileiro: “Usando do direito que a Constituição me concede, declaro que hei muito voluntariamente abdicado na pessoa de meu muito amado e prezado filho, o Senhor D. Pedro de Alcântara”. O ato marcou o fim do Primeiro Reinado e, como Pedro de Alcântara contava, então, apenas 5 anos de idade, o Brasil foi governado por regentes. A abdicação de D. Pedro I foi o ápice de uma série de tensões e conflitos que o governo sofria, em grande parte devido ao autoritarismo do imperador e ao seu envolvimento com a crise sucessória do trono português. Em março de 1831, nova agitação acelerou os acontecimentos. Partidários de D. Pedro organizaram uma manifestação com bombas, foguetes e luminárias no centro do Rio de Janeiro para receber o imperador que voltava de Minas Gerais.</div>
-          </div>
-          
-          
-        </div>
-        <div class="swiper-button-prev"></div>
-        <div class="swiper-button-next"></div>
-        <div class="swiper-pagination"></div>
-      </div>
-    </div>
-  </div>
-  <footer>
-    <div class="footer-container">
-      <div class="footer-logo">
-        <img id="img_footer" src="imagem/logofooter.png" />
-      </div>
-      <div class="footer-link">
-        <div class="itens-footer">
-          <h3>Início</h3>
-          <a href="#">Home</a>
-        </div>
-        <div class="itens-footer">
-          <h3>Sobre Nós</h3>
-          <a href="#">Nossa missão</a>
-          <a href="#">Institucional</a>
-          <a href="#">Contatos</a>
-        </div>
-        <div class="itens-footer">
-          <h3>Suporte</h3>
-          <a href="#">FAQ</a>
-          <a href="#">Chat</a>
-        </div>
-      </div>
-      <div class="footer-social">
-        <a href="#"
-          ><img src="imagem/facebook1.png" alt="" width="70px"
-        /></a>
-        <a href="#"
-          ><img src="imagem/instagram1.png" alt="" width="70px"
-        /></a>
-        <a href="#"
-          ><img src="imagem/twitter1.png" alt="" width="70px"
-        /></a>
-      </div>
-    </div>
-    <div class="direitos">
-      <p>© 2025 Todos os direitos reservados</p>
-    </div>
-  </footer>
+      /* Estilo básico do modal */
+      .modal-container {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 80%;
+        height: 100%;
+        background: rgba(0, 0, 0, 0.715);
+        display: none;
+        justify-content: center;
+        align-items: center;
+        z-index: 1;
+      }
 
-  <!-- SWIPER JS 4.5.0 (igual ao CodePen) -->
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.5.0/js/swiper.min.js"></script>
-  <script>
-    var timelineSwiper = new Swiper('.timeline .swiper-container', {
-      direction: 'vertical',
-      loop: false,
-      speed: 1600,
-      pagination: {
-        el: '.swiper-pagination',
-        clickable: true,
-        renderBullet: function (index, className) {
-          var year = document.querySelectorAll('.swiper-slide')[index].getAttribute('data-year');
-          return '<span class="' + className + '">' + year + '</span>';
-        },
-      },
-      navigation: {
-        nextEl: '.swiper-button-next',
-        prevEl: '.swiper-button-prev',
-      },
-      breakpoints: {
-        768: {
-          direction: 'horizontal',
+      .modal {
+        background: rgba(255, 255, 255, 0.748);
+        padding: 20px;
+        width: 50%;
+        max-width: 60%;
+        height: 56%;
+        border-radius: 10px;
+        box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.3);
+        text-align: center;
+        margin-right: 30%;
+      }
+
+      .modal .video-modal {
+        width: 90%;
+        height: 80%;
+        border-radius: 10px;
+        margin-top: 4%;
+      }
+
+      .modal button {
+        width: 20%;
+        margin-top: 10px;
+        padding: 10px;
+        background-color: #d9534f;
+        color: white;
+        border: none;
+        border-radius: 10px;
+        cursor: pointer;
+        padding: 10px;
+      }
+
+      /* SLIDE ATIVO */
+      .timeline .swiper-slide-active .timeline-year {
+        opacity: 1;
+        transform: translate3d(0, 0, 0);
+        transition: 0.4s ease 1.6s;
+      }
+
+      .timeline .swiper-slide-active .timeline-title {
+        opacity: 1;
+        transform: translate3d(0, 0, 0);
+        transition: 0.4s ease 1.7s;
+      }
+
+      .timeline .swiper-slide-active .timeline-text {
+        opacity: 1;
+        transform: translate3d(0, 0, 0);
+        transition: 0.4s ease 1.8s;
+      }
+
+      /* PAGINAÇÃO */
+      .timeline .swiper-pagination {
+        right: 15% !important;
+        height: 100%;
+        display: none;
+        flex-direction: column;
+        justify-content: center;
+        font-style: italic;
+        font-weight: 300;
+        font-size: 18px;
+        z-index: 1;
+      }
+
+      .timeline .swiper-pagination::before {
+        content: "";
+        position: absolute;
+        left: -30px;
+        top: 0;
+        height: 100%;
+        width: 1px;
+        background-color: rgba(255, 255, 255, 0.2);
+      }
+
+      .timeline .swiper-pagination-bullet {
+        width: auto;
+        height: auto;
+        text-align: center;
+        opacity: 1;
+        background: transparent;
+        color: var(--primary);
+        margin: 15px 0 !important;
+        position: relative;
+        display: inline-block;
+      }
+
+      .timeline .swiper-pagination-bullet::before {
+        content: "";
+        position: absolute;
+        top: 8px;
+        left: -32.5px;
+        width: 6px;
+        height: 6px;
+        border-radius: 100%;
+        background-color: var(--primary);
+        transform: scale(0);
+        transition: 0.2s;
+      }
+
+      .timeline .swiper-pagination-bullet-active {
+        color: var(--primary);
+      }
+
+      .timeline .swiper-pagination-bullet-active::before {
+        transform: scale(1);
+      }
+
+      /* NAVEGAÇÃO */
+      .timeline .swiper-button-next,
+      .timeline .swiper-button-prev {
+        background-size: 20px 20px;
+        top: 15%;
+        width: 20px;
+        height: 20px;
+        margin-top: 0;
+        z-index: 2;
+        transition: 0.2s;
+      }
+
+      .timeline .swiper-button-prev {
+        left: 8%;
+        background-image: url("data:image/svg+xml;charset=utf-8,%3Csvg%20xmlns%3D'http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg'%20viewBox%3D'0%200%2027%2044'%3E%3Cpath%20d%3D'M0%2C22L22%2C0l2.1%2C2.1L4.2%2C22l19.9%2C19.9L22%2C44L0%2C22L0%2C22L0%2C22z'%20fill%3D'%23d4a024'%2F%3E%3C%2Fsvg%3E");
+      }
+
+      .timeline .swiper-button-prev:hover {
+        transform: translateX(-3px);
+      }
+
+      .timeline .swiper-button-next {
+        right: 8%;
+        background-image: url("data:image/svg+xml;charset=utf-8,%3Csvg%20xmlns%3D'http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg'%20viewBox%3D'0%200%2027%2044'%3E%3Cpath%20d%3D'M27%2C22L27%2C22L5%2C44l-2.1-2.1L22.8%2C22L2.9%2C2.1L5%2C0L27%2C22L27%2C22z'%20fill%3D'%23d4a024'%2F%3E%3C%2Fsvg%3E");
+      }
+
+      .timeline .swiper-button-next:hover {
+        transform: translateX(3px);
+      }
+
+      footer {
+        position: relative;
+        width: 100%;
+        height: 200px;
+        font-family: "Exo-medium";
+        color: #f7c745;
+        z-index: 100;
+      }
+
+      .footer-container {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        flex-wrap: wrap;
+        margin: auto;
+        background-color: #052d5c;
+        color: #f7c745;
+        font-family: "Exo-medium";
+      }
+
+      .footer-logo img {
+        width: 130px;
+        margin-top: 15px;
+      }
+
+      .footer-link {
+        display: flex;
+        gap: 150px;
+        text-align: left;
+      }
+
+      .itens-footer {
+        display: flex;
+        flex-direction: column;
+      }
+
+      .itens-footer h3 {
+        margin-bottom: 10px;
+      }
+
+      .itens-footer a {
+        text-decoration: none;
+        margin: 5px 0px;
+        color: #f7c745;
+      }
+
+      .footer-social {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+      }
+
+      .footer-social a {
+        margin: 5px;
+      }
+
+      .direitos p {
+        width: 98.5%;
+        color: #052d5c;
+        background-color: #f7c745;
+        text-align: center;
+        padding: 10px;
+        margin-top: 1px;
+        font-size: 15px;
+        justify-content: center;
+        font-family: "Exo-medium";
+      }
+      /* --------------------barrinha de rolagem----------------------*/
+      ::-webkit-scrollbar {
+        width: 15px;
+      }
+
+      ::-webkit-scrollbar-track {
+        background: #ddefff;
+        border-radius: 13px;
+      }
+
+      ::-webkit-scrollbar-thumb {
+        background-color: #052d5c;
+        border-radius: 10px;
+        border: 1px solid #ddefff;
+      }
+
+      /* RESPONSIVO */
+
+      @media (max-width: 500px) {
+        .barra_menu {
+          width: 100%;
+          height: 320px;
+          display: flex;
+          flex-direction: column;
+          justify-content: space-between;
+          background-image: url(imagem/background.jpg);
+          background-size: cover;
+          background-repeat: no-repeat;
+        }
+
+        #menu {
+          width: 100%;
+          height: 120px;
+          padding-top: 15px;
+        }
+
+        #navegacao {
+          width: 90%;
+          height: 220px;
+          background-color: #d9534f;
+          margin: auto;
+        }
+
+        #navegacao a {
+          font-size: 15px;
+          height: 23%;
+          padding: 15px;
+          background-color: #f7c745;
+        }
+
+        #logo {
+          position: relative;
+          width: 120px;
+          height: 120px;
+          background-image: url(imagem/elemento1.png);
+          background-size: contain;
+          background-repeat: no-repeat;
+        }
+
+        #nome_logo {
+          position: relative;
+          width: 250px;
+          height: 90px;
+          font-family: "Azonix";
+          color: #052d5c;
+          font-size: 35px;
+          padding-top: 25px;
+          margin-left: 15px;
+        }
+
+        #bemVindo {
+          width: 100%;
+          text-align: center;
+        }
+
+        #bemVindo img {
+          width: 100px;
+          height: 100px;
+        }
+
+        #bemVindo h1 {
+          font-size: 70px;
+          margin-top: 5px;
+        }
+
+        #bemVindo p {
+          font-size: 18px;
+        }
+
+        #bemVindo h2 {
+          font-size: 18px;
+        }
+
+        .linhaContainer {
+          width: 90%;
+          height: 520px;
+        }
+
+        .linhaContainer .ano {
+          font-size: 25px;
+          width: 35%;
+          height: 50px;
+        }
+
+        .linhaContainer .caixa {
+          width: 90%;
+          height: 400px;
+        }
+
+        .textos h1 {
+          font-size: 28px;
+          margin-top: 0px;
+        }
+
+        .textos p {
+          font-size: 18px;
+        }
+
+        .abrirModal {
+          width: 40%;
+          height: 12%;
+          font-size: 14px;
+        }
+
+        .caixa {
+          background-position: center;
         }
       }
+      @media screen and (min-width: 768px) {
+        .timeline .swiper-slide::after {
+          right: -30%;
+          bottom: -8%;
+          width: 240px;
+          height: 50%;
+          box-shadow: -230px 0 150px 50vw rgba(0, 0, 0, 0.7);
+        }
+
+        .timeline .swiper-slide-content {
+          right: 30%;
+          top: 50%;
+          transform: translateY(-50%);
+          width: 310px;
+          font-size: 11px;
+          text-align: right;
+        }
+
+        .timeline .timeline-year {
+          margin-bottom: 0;
+          font-size: 32px;
+        }
+
+        .timeline .timeline-title {
+          font-size: 35px;
+          margin: 0;
+        }
+
+        .timeline .swiper-pagination {
+          display: flex;
+        }
+
+        .timeline .swiper-button-prev {
+          top: 15%;
+          left: auto;
+          right: 15%;
+          transform: rotate(90deg) translate(0, 10px);
+        }
+
+        .timeline .swiper-button-prev:hover {
+          transform: rotate(90deg) translate(-3px, 10px);
+        }
+
+        .timeline .swiper-button-next {
+          top: auto;
+          bottom: 15%;
+          right: 15%;
+          transform: rotate(90deg) translate(0, 10px);
+        }
+
+        .timeline .swiper-button-next:hover {
+          transform: rotate(90deg) translate(3px, 10px);
+        }
+      }
+
+      @media screen and (min-width: 1024px) {
+        .timeline .swiper-slide::after {
+          right: -20%;
+          bottom: -12%;
+          width: 240px;
+          height: 50%;
+          box-shadow: -230px 0 150px 39vw rgba(0, 0, 0, 0.7);
+        }
+
+        .timeline .swiper-slide-content {
+          right: 25%;
+        }
+      }
+    </style>
+  </head>
+
+  <body>
+    <nav class="barra_menu">
+      <div id="menu">
+          <div id="logo"></div>
+          <div id="nome_logo">PASSAPORTE TEMPORAL</div>
+      </div>
+  
+      <div id="navegacao">
+          <ul>
+              <li><a href="index.html">Início</a></li>
+              <li>
+                  <a href="periodos.html">Períodos</a>
+              </li>
+              <li><a href="brasil_do_amanha.html">Brasil do amanhã</a></li>
+              <li><a href="sobre_nos.html">Sobre nós</a></li>
+          </ul>
+      </div>
+  </nav>
+
+    <section id="bemVindo">
+      <div id="fundo-imagem"></div>
+
+      <img
+        src="imagem/coroareal.png"
+        alt="Coroa Real"
+        style="cursor: pointer"
+      />
+      <p>Bem-vindo ao:</p>
+      <h1>Primeiro Reinado</h1>
+      <h2>(1822-1831)</h2>
+    </section>
+
+    <section id="music" class="music-player-container">
+      <div id="main">
+        <div class="content">
+          <div class="slider-playlist">
+            <div class="music-swiper swiper">
+              <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                  <img
+                    src="./imagem/periodoImperial/poclamaçãoRepublica.jpg"
+                    alt="Hino Independência"
+                    class="k"/>
+                  <h1 class="n">Hino Independência</h1>
+                </div>
+                <div class="swiper-slide">
+                  <img
+                    src="./imagem/periodoImperial/constituicao.jpg"
+                    alt="Pedro Drama"
+                    class="k" />
+                  <h1 class="n">Pedro Drama</h1>
+                </div>
+                <div class="swiper-slide">
+                  <img
+                    src="./imagem/Constituição_de_1824.jpg"
+                    alt="O Poder Moderador"
+                    class="k"/>
+                  <h1 class="n">O Poder Moderador</h1>
+                </div>
+                <div class="swiper-slide">
+                  <img
+                    src="./imagem/periodoImperial/guerraCisplatina.jpg"
+                    alt="A Batalha da Cisplatina"
+                    class="k" />
+                  <h1 class="n">A Batalha da Cisplatina</h1>
+                </div>
+                <div class="swiper-slide">
+                  <img
+                    src="./imagem/periodoImperial/abdicacaoTrono.jpg"
+                    alt="A Abdicação"
+                    class="k"/>
+                  <h1 class="n">A Abdicação</h1>
+                </div>
+              </div>
+            </div>
+    
+            <div class="playlist">
+              <div class="playlist-item">
+                <img
+                  src="./imagem/periodoImperial/poclamaçãoRepublica.jpg"
+                  alt="Hino Independência"
+                  class="k"/>
+                <div class="song">
+                  <p class="m">Hino Independência</p>
+                  <p class="m">Império</p>
+                </div>
+                <p class="m">3:44</p>
+                <i class="fa-regular fa-heart like-btn"></i>
+              </div>
+              <div class="playlist-item">
+                <img
+                  src="./imagem/periodoImperial/constituicao.jpg"
+                  alt="Pedro Drama"
+                  class="k"/>
+                <div class="song">
+                  <p class="m">Pedro Drama</p>
+                  <p class="m">Dom Pedro 1</p>
+                </div>
+                <p class="m">3:14</p>
+                <i class="fa-regular fa-heart like-btn"></i>
+              </div>
+              <div class="playlist-item">
+                <img
+                  src="./imagem/Constituição_de_1824.jpg"
+                  alt="O Poder Moderador"
+                  class="k"/>
+                <div class="song">
+                  <p class="m">O Poder Moderador</p>
+                  <p class="m">Dom Pedro 1</p>
+                </div>
+                <p class="m">3:10</p>
+                <i class="fa-regular fa-heart like-btn"></i>
+              </div>
+              <div class="playlist-item">
+                <img
+                  src="./imagem/periodoImperial/guerraCisplatina.jpg"
+                  alt="A Batalha da Cisplatina"
+                  class="k" />
+                <div class="song">
+                  <p class="m">A Batalha da Cisplatina</p>
+                  <p class="m">Maria Leopoldina</p>
+                </div>
+                <p class="m">2:51</p>
+                <i class="fa-solid fa-heart like-btn"></i>
+              </div>
+              <div class="playlist-item">
+                <img
+                  src="./imagem/periodoImperial/abdicacaoTrono.jpg"
+                  alt="A Abdicação"
+                  class="k"/>
+                <div class="song">
+                  <p class="m">A Abdicação</p>
+                  <p class="m">Dom Pedro 1</p>
+                </div>
+                <p class="m">3:27</p>
+                <i class="fa-regular fa-heart like-btn"></i>
+              </div>
+            </div>
+          </div>
+    
+          <div class="player">
+            <audio
+              id="audioPlayer"
+              src="./music/playlist/Iframe Pequeno Cidadão - O Sol e a Lua [HbIC6c3p3Qo].mp3"
+              type="audio/mpeg">
+            </audio>
+            <div class="controls">
+              <i class="fa-solid fa-shuffle" id="shuffleBtn"></i>
+              <i class="fa-solid fa-backward" id="prevBtn"></i>
+              <button id="playPauseBtn">
+                <i class="fa-solid fa-play" id="playPauseIcon"></i>
+              </button>
+              <i class="fa-solid fa-forward" id="nextBtn"></i>
+              <div class="volume">
+                <i class="fa-solid fa-volume-high"></i>
+                <input
+                  type="range"
+                  id="volume-range"
+                  min="0"
+                  max="100"
+                  value="100" />
+              </div>
+            </div>
+            <input type="range" value="0" id="progress-bar" />
+          </div>
+        </div>
+      </div>
+    </section>
+    </section>
+    <div class="container">
+      <div class="timeline">
+        <div class="swiper-container">
+          <div class="swiper-wrapper">
+            <div
+              class="swiper-slide"
+              style="background-image: url(imagem/poclamaçãoRepublica.jpg)"
+              alt="comeco_da_republica"
+              data-year="Resumo"
+            >
+              <div class="swiper-slide-content">
+                <span class="timeline-year"></span>
+                <h5 class="timeline-title">Primeiro Reinado</h5>
+                <p class="timeline-text"></p>
+                <button
+                  class="abrirModal"
+                  data-modal="modal1"
+                  onclick="abrirModal(this)"
+                >
+                  Assistir
+                </button>
+              </div>
+            </div>
+            <div class="modal-container" id="modal1">
+              <div class="modal">
+                <iframe
+                  class="video-modal"
+                  src="https://www.youtube.com/embed/l-aRBhaHwgE?si=NTSZAK8Dc3pErSeH"
+                  title="YouTube video player"
+                  frameborder="0"
+                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                  referrerpolicy="strict-origin-when-cross-origin"
+                  allowfullscreen
+                ></iframe>
+                <button
+                  class="fecharModal"
+                  onclick="fecharModal(document.getElementById('modal1'))"
+                >
+                  Fechar
+                </button>
+              </div>
+            </div>
+            <div
+              class="swiper-slide"
+              style="background-image: url(imagem/poclamaçãoRepublica.jpg)"
+              alt="comeco_da_republica"
+              data-year="1822"
+            >
+              <div class="swiper-slide-content">
+                <span class="timeline-year">1822</span>
+                <h5 class="timeline-title">Proclamação da Independência</h5>
+                <p class="timeline-text">
+                  No dia 7 de setembro de 1822, D. Pedro 1º declarou
+                  independência do Brasil às margens do rio Ipiranga. A
+                  historiadora Luciene Carris define o acontecimento como "um
+                  dos mais importantes da história do país". "É um episódio que
+                  corresponde ao fim do domínio português sobre o Brasil,
+                  principalmente nas relações econômicas e políticas", falou.
+                  Ainda de acordo com Luciene, os efeitos da independência não
+                  foram imediatos em todo o Brasil.
+                </p>
+              </div>
+            </div>
+
+            <div
+              class="swiper-slide"
+              style="background-image: url(imagem/constituicao.jpg)"
+              alt="era_vargas"
+              data-year="1824"
+            >
+              <div class="swiper-slide-content">
+                <span class="timeline-year">1824</span>
+                <h5 class="timeline-title">Constituição</h5>
+                <p class="timeline-text">
+                  A Constituição de 1824 foi criada após a independência do
+                  Brasil, em 1822. Ela foi importante para organizar o país como
+                  uma nação. A independência aconteceu porque os líderes
+                  brasileiros queriam manter sua autonomia, enquanto as Cortes
+                  portuguesas queriam que o Brasil voltasse a ser colônia. Esses
+                  conflitos ajudaram a fortalecer a ideia de independência no
+                  país.
+                </p>
+              </div>
+            </div>
+
+            <div
+              class="swiper-slide"
+              style="background-image: url(imagem/guerraCisplatina.jpg)"
+              alt="rep_populista"
+              data-year="1825"
+            >
+              <div class="swiper-slide-content">
+                <span class="timeline-year">1825</span>
+                <h5 class="timeline-title">Guerra da Cisplatina</h5>
+                <p class="timeline-text">
+                  Para o império brasileiro, era fundamental acabar com a
+                  rebelião na província do sul. Dom Pedro I se tornou imperador
+                  e, assim, tinha como principal objetivo a manutenção
+                  territorial do Brasil. A Província Unida estava do lado de
+                  Lavalleja e esperava a anexação da Cisplatina, obtendo o
+                  domínio do território. Iniciada a rebelião, em 1825, Dom Pedro
+                  I enviou tropas para a área. Os soldados brasileiros foram
+                  autoritários e truculentos com a população local, o que
+                  provocou reações negativas. A crise econômica que o império
+                  atravessava impediu investimento em armamentos e treinamentos
+                  para os soldados combaterem os inimigos.
+                </p>
+              </div>
+            </div>
+            <div
+              class="swiper-slide"
+              style="background-image: url(imagem/sucessaoPortuguesa.jpg)"
+              alt="ditadura_militar"
+              data-year="1826"
+            >
+              <div class="swiper-slide-content">
+                <span class="timeline-year">1826</span>
+                <h5 class="timeline-title">Sucessão Portuguesa</h5>
+                <p class="timeline-text">
+                  Dom Pedro e Dom Miguel: a Querela da Sucessão demonstra a
+                  reação dos portugueses à Independência do Brasil e a mágoa
+                  gerada em relação a Dom Pedro, que virou imperador brasileiro
+                  no final de 1822. Em 10 de março de 1826, o pai dele, Dom João
+                  VI, rei de Portugal, morreu aos 59 anos. Pedro de Alcântara, o
+                  então imperador Dom Pedro I do Brasil, foi coroado também rei
+                  de Portugal sob o nome de D. Pedro IV. Ficou no cargo apenas
+                  até maio de 1826, e abdicou do trono em nome da filha Maria da
+                  Glória, na época com sete anos. Ele determinou que seu irmão,
+                  Dom Miguel, seria o tutor até que ela atingisse a maioridade,
+                  e que deveria se casar com a sobrinha. Pedro também outorgou
+                  uma constituição a Portugal em 1826. No entanto, Dom Miguel,
+                  com apoio da mãe Carlota Joaquina, anulou essa constituição e
+                  rejeitou a sobrinha como rainha e noiva. Em 7 de abril de
+                  1831, Dom Pedro I entregou a carta de renúncia e retornou para
+                  Portugal.
+                </p>
+              </div>
+            </div>
+            <div
+              class="swiper-slide"
+              style="background-image: url(imagem/manifestacoes.jpg)"
+              alt="nova_rep"
+              data-year="1830"
+            >
+              <div class="swiper-slide-content">
+                <span class="timeline-year">1830</span>
+                <h5 class="timeline-title">Manifestações</h5>
+                <p class="timeline-text">
+                  Giovanni Battista Líbero Badaró foi um jornalista italiano
+                  erradicado no Brasil que foi assassinado em 1830, em plena
+                  crise política do Primeiro Reinado. Crise que se agravou com a
+                  morte do oposicionista, pois Badaró era uma importante figura
+                  na crítica aos acontecimentos políticos daqueles tempos
+                  através do jornal Observatório Constitucional. O que se diz é
+                  que Líbero Badaró morreu pela defesa que praticava pela
+                  liberdade de imprensa contra os abusos da monarquia e da
+                  Constituição. Também teria sido executado por atacar a maior
+                  autoridade jurídica de São Paulo, Ladislau Japiaçu e os
+                  autoritarismos da província. Entretanto, muitos historiadores
+                  discutem que Dom Pedro I estaria envolvido no crime.
+                </p>
+              </div>
+            </div>
+            <div
+              class="swiper-slide"
+              style="background-image: url(imagem/abdicacaoTrono.jpg)"
+              alt="nova_rep"
+              data-year="1831"
+            >
+              <div class="swiper-slide-content">
+                <span class="timeline-year">1831</span>
+                <h5 class="timeline-title">Abdicação de D. Pedro I</h5>
+                <p class="timeline-text">
+                  Em 1831, Dom Pedro I deixou o trono do Brasil e passou o poder
+                  para seu filho de 5 anos, Dom Pedro de Alcântara. Como ele era
+                  muito novo, o país foi governado por regentes. A saída de Dom
+                  Pedro aconteceu por causa de brigas políticas e do seu jeito
+                  autoritário.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="swiper-button-prev"></div>
+          <div class="swiper-button-next"></div>
+          <div class="swiper-pagination"></div>
+        </div>
+      </div>
+    </div>
+    <footer>
+      <div class="footer-container">
+        <div class="footer-logo">
+          <img id="img_footer" src="imagem/logofooter.png" />
+        </div>
+        <div class="footer-link">
+          <div class="itens-footer">
+            <h3>Início</h3>
+            <a href="#">Home</a>
+          </div>
+          <div class="itens-footer">
+            <h3>Sobre Nós</h3>
+            <a href="#">Nossa missão</a>
+            <a href="#">Institucional</a>
+            <a href="#">Contatos</a>
+          </div>
+          <div class="itens-footer">
+            <h3>Suporte</h3>
+            <a href="#">FAQ</a>
+            <a href="#">Chat</a>
+          </div>
+        </div>
+        <div class="footer-social">
+          <a href="#"><img src="imagem/facebook1.png" alt="" width="70px" /></a>
+          <a href="#"
+            ><img src="imagem/instagram1.png" alt="" width="70px"
+          /></a>
+          <a href="#"><img src="imagem/twitter1.png" alt="" width="70px" /></a>
+        </div>
+      </div>
+      <div class="direitos">
+        <p>© 2025 Todos os direitos reservados</p>
+      </div>
+    </footer>
+
+    <!-- SWIPER JS 4.5.0 (igual ao CodePen) -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.5.0/js/swiper.min.js"></script>
+    <script>
+      document.addEventListener("DOMContentLoaded", () => {
+     // Configuração do Swiper da timeline
+     const timelineSwiper = new Swiper(".timeline .swiper-container", {
+         direction: "vertical",
+         loop: false,
+         speed: 1600,
+         pagination: {
+             el: ".timeline .swiper-pagination",
+             clickable: true,
+             renderBullet: function (index, className) {
+                 const slides = document.querySelectorAll('.timeline .swiper-slide');
+                 if (slides && slides.length > index) {
+                     const year = slides[index].getAttribute("data-year");
+                     return year ? `<span class="${className}">${year}</span>` : '';
+                 }
+                 return '';
+             },
+         },
+         navigation: {
+             nextEl: ".timeline .swiper-button-next",
+             prevEl: ".timeline .swiper-button-prev",
+         },
+         breakpoints: {
+             768: {
+                 direction: "horizontal",
+             },
+         },
+     });
+    
+     // Elementos do player de música
+     const playlistItems = document.querySelectorAll(".playlist-item");
+     const likeBtns = document.querySelectorAll(".like-btn");
+     const audioPlayer = document.getElementById("audioPlayer");
+     const volumeRange = document.getElementById("volume-range");
+     const progressBar = document.getElementById("progress-bar");
+     const playPauseBtn = document.getElementById("playPauseBtn");
+     const playPauseIcon = document.getElementById("playPauseIcon");
+     const prevBtn = document.getElementById("prevBtn");
+     const nextBtn = document.getElementById("nextBtn");
+     const shuffleBtn = document.getElementById("shuffleBtn");
+    
+     let currentSongIndex = 2;
+     let isSongLoaded = false;
+     let isShuffleOn = false;
+    
+     const songs = [
+         "./music/playlist/＂Hino da Independência＂ - Anthem of The Empire of Brazil.mp3",
+         "./music/playlist/Paródia da Música Nego Drama (Pedro Drama) [ejDsTKEnVdY].mp3",
+         "./music/playlist/O Poder Moderador.mp3",
+         "./music/playlist/A Batalha da Cisplatina.mp3",
+         "./music/playlist/Modinha Imperial.mp3",
+     ];
+    
+     // Inicializa o Swiper do player de música
+     const musicSwiper = new Swiper(".music-swiper", {
+         effect: "cards",
+         cardsEffect: {
+             perSlideOffset: 9,
+             perSlideRotate: 3,
+         },
+         grabCursor: true,
+         speed: 700,
+         initialSlide: currentSongIndex,
+     });
+    
+     // Evento quando o slide muda
+     musicSwiper.on("slideChange", () => {
+         const newIndex = musicSwiper.realIndex;
+         if (newIndex !== currentSongIndex && songs[newIndex]) {
+             currentSongIndex = newIndex;
+             loadAndPlaySong(currentSongIndex);
+         }
+     });
+    
+     // Funções do player
+     function updateSwiperToMatchSong(index) {
+         if (musicSwiper.activeIndex !== index) {
+             musicSwiper.slideTo(index);
+         }
+     }
+    
+     function updatePlaylistHighlight(index) {
+         playlistItems.forEach((item, i) => {
+             item.classList.toggle("active-playlist-item", i === index);
+         });
+     }
+    
+     function loadAndPlaySong(index) {
+         if (index >= 0 && index < songs.length) {
+             audioPlayer.src = songs[index];
+             audioPlayer.play()
+                 .then(() => {
+                     updatePlayPauseIcon(true);
+                     updatePlaylistHighlight(index);
+                     isSongLoaded = true;
+                 })
+                 .catch(error => {
+                     console.error("Erro ao reproduzir música:", error);
+                     updatePlayPauseIcon(false);
+                 });
+         }
+     }
+    
+     function pauseSong() {
+         audioPlayer.pause();
+         updatePlayPauseIcon(false);
+     }
+    
+     function playSong() {
+         audioPlayer.play()
+             .then(() => updatePlayPauseIcon(true))
+             .catch(error => console.error("Erro ao reproduzir:", error));
+     }
+    
+     function togglePlayPause() {
+         if (!isSongLoaded) {
+             loadAndPlaySong(currentSongIndex);
+         } else if (audioPlayer.paused) {
+             playSong();
+         } else {
+             pauseSong();
+         }
+     }
+    
+     function updatePlayPauseIcon(isPlaying) {
+         playPauseIcon.classList.toggle("fa-play", !isPlaying);
+         playPauseIcon.classList.toggle("fa-pause", isPlaying);
+     }
+    
+     function nextSong() {
+         if (isShuffleOn) {
+             playRandomSong();
+         } else {
+             currentSongIndex = (currentSongIndex + 1) % songs.length;
+             loadAndPlaySong(currentSongIndex);
+         }
+     }
+    
+     function prevSong() {
+         if (isShuffleOn) {
+             playRandomSong();
+         } else {
+             currentSongIndex = (currentSongIndex - 1 + songs.length) % songs.length;
+             loadAndPlaySong(currentSongIndex);
+         }
+     }
+    
+     function playRandomSong() {
+         let randomIndex;
+         do {
+             randomIndex = Math.floor(Math.random() * songs.length);
+         } while (randomIndex === currentSongIndex && songs.length > 1);
+         
+         currentSongIndex = randomIndex;
+         loadAndPlaySong(currentSongIndex);
+     }
+    
+     function toggleShuffle() {
+         isShuffleOn = !isShuffleOn;
+         shuffleBtn.classList.toggle("active", isShuffleOn);
+     }
+    
+     // Event listeners
+     playlistItems.forEach((item, index) => {
+         item.addEventListener("click", () => {
+             currentSongIndex = index;
+             loadAndPlaySong(index);
+         });
+     });
+    
+     playPauseBtn.addEventListener("click", togglePlayPause);
+     nextBtn.addEventListener("click", nextSong);
+     prevBtn.addEventListener("click", prevSong);
+     shuffleBtn.addEventListener("click", toggleShuffle);
+    
+     // Atualização do progresso
+     audioPlayer.addEventListener("loadedmetadata", () => {
+         progressBar.max = audioPlayer.duration;
+         progressBar.value = audioPlayer.currentTime;
+     });
+    
+     audioPlayer.addEventListener("timeupdate", () => {
+         if (!isNaN(audioPlayer.duration)) {
+             progressBar.value = audioPlayer.currentTime;
+         }
+     });
+    
+     progressBar.addEventListener("input", () => {
+         audioPlayer.currentTime = progressBar.value;
+     });
+    
+     progressBar.addEventListener("change", () => {
+         if (!audioPlayer.paused) {
+             audioPlayer.play();
+         }
+     });
+    
+     volumeRange.addEventListener("input", () => {
+         audioPlayer.volume = volumeRange.value / 100;
+     });
+    
+     audioPlayer.addEventListener("ended", nextSong);
+    
+     // Botões de like
+     likeBtns.forEach((likeBtn) => {
+         likeBtn.addEventListener("click", (e) => {
+             e.stopPropagation();
+             likeBtn.classList.toggle("fa-regular");
+             likeBtn.classList.toggle("fa-solid");
+         });
+     });
+    
+     // Funções do modal
+     function abrirModal(button) {
+         const modalId = button?.getAttribute("data-modal");
+         if (modalId) {
+             const modal = document.getElementById(modalId);
+             if (modal) {
+                 modal.style.display = "flex";
+                 document.body.style.overflow = "hidden";
+             }
+         }
+     }
+    
+     function fecharModal(button) {
+         const modal = button?.closest(".modal-container");
+         if (modal) {
+             const iframe = modal.querySelector("iframe");
+             if (iframe) iframe.src = iframe.src;
+             modal.style.display = "none";
+             document.body.style.overflow = "auto";
+         }
+     }
+    
+     // Event listeners para modais
+     document.querySelectorAll(".abrirModal").forEach(btn => {
+         btn.addEventListener("click", () => abrirModal(btn));
+     });
+    
+     document.querySelectorAll(".fecharModal").forEach(btn => {
+         btn.addEventListener("click", () => fecharModal(btn));
+     });
+    
+     document.querySelectorAll(".modal-container").forEach(modalContainer => {
+         modalContainer.addEventListener("click", (event) => {
+             if (event.target === modalContainer) {
+                 fecharModal(event.target);
+             }
+         });
+     });
+    
+     // Carrega a música inicial
+     loadAndPlaySong(currentSongIndex);
     });
-  </script>
-
-<div vw class="enabled">
-  <div vw-access-button class="active"></div>
-  <div vw-plugin-wrapper>
-    <div class="vw-plugin-top-wrapper"></div>
-  </div>
-</div>
-<script src="https://vlibras.gov.br/app/vlibras-plugin.js"></script>
-<script>
-  new window.VLibras.Widget('https://vlibras.gov.br/app');
-</script>
-
-</body>
+     </script>    
+  </body>
 </html>
