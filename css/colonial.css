@@ -11,21 +11,21 @@
 
 @font-face {
   font-family: "Azonix";
-  src: url("./font/Azonix.otf") format("truetype");
+  src: url("../font/Azonix.otf") format("truetype");
   font-weight: normal;
   font-style: normal;
 }
 
 @font-face {
   font-family: "Exo-bold";
-  src: url("./font/Exo2-Bold.otf") format("truetype");
+  src: url("../font/Exo2-Bold.otf") format("truetype");
   font-weight: normal;
   font-style: normal;
 }
 
 @font-face {
   font-family: "Exo-medium";
-  src: url("./font/Exo2-Medium.otf") format("truetype");
+  src: url("../font/Exo2-Medium.otf") format("truetype");
   font-weight: normal;
   font-style: normal;
 }
