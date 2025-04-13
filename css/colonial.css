@@ -37,7 +37,7 @@ height: 140px;
 box-shadow: 0 6px 10px rgba(0, 0, 0, 0.2);
 display: flex;
 flex-direction: row;
-background-image: url(../imagem/background.jpg);
+background-image: url(./imagem/background.jpg);
 background-size: cover;
 background-repeat: no-repeat;
 }
@@ -225,7 +225,7 @@ position: absolute;
   width: 100%;
   height: 100%;
   z-index: -1; /* Coloca o vídeo atrás do conteúdo */
-  background-image: url(../imagem/background.jpg);
+  background-image: url(./imagem/background.jpg);
   background-attachment: fixed;
   background-repeat: no-repeat;
   background-size: cover;
